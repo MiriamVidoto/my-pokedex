@@ -1,5 +1,9 @@
+import { StyledFooter } from '../styleds/StyledFooter';
+
 export default function Footer() {
   return (
-    <div>Footer</div>
+    <StyledFooter>
+      <span>&copy; Miriam Vidoto </span>
+    </StyledFooter>
   );
 }
