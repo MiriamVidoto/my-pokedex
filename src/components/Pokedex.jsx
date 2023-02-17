@@ -1,43 +1,10 @@
-import React, { useEffect, useContext } from 'react';
+import React, { useContext } from 'react';
 import PokedexContext from '../context/PokedexContext';
-import { getAllPokemons } from '../services/getAllPokemons';
-import { getByUrl } from '../services/getByUrl';
 import PokemonCard from './PokemonCard';
 import { StyledContainer } from '../styleds/StyledContainer';
 
 export default function Pokedex() {
-  const {
-    loading,
-    setLoading,
-    offset,
-    setOffset,
-    pokemonsList,
-    setPokemonsList,
-  } = useContext(PokedexContext);
-
-  const getPokemons = async () => {
-    if (!offset) {
-      setOffset(0);
-    }
-
-    setLoading(false);
-
-    const data = await getAllPokemons(offset);
-    const promisses = data.map(async (pokemon) => {
-      const response = await getByUrl(pokemon.url);
-      return response;
-    });
-    const result = await Promise.all(promisses);
-
-    setPokemonsList(result);
-    setLoading(false);
-  };
-
-  useEffect(() => {
-    getPokemons();
-  }, [offset]);
-
-  if (loading) return (<h1>Loading...</h1>);
+  const { pokemonsList } = useContext(PokedexContext);
 
   if (pokemonsList) {
     return (

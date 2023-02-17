@@ -12,7 +12,7 @@ export default function PokemonCard({ name, image }) {
             src={ image }
           />
         }
-        <span>{ name.toUpperCase() }</span>
+        <h4>{ name.toUpperCase() }</h4>
       </Link>
     </StyledCard>
   );

@@ -12,7 +12,7 @@ export const StyledCard = styled.div`
   width: 150px;
 
   img { 
-    height: 100px;
+    height: 94px;
   }
 
   a{

@@ -7,4 +7,5 @@ export const StyledContainer = styled.div`
   width: 90%;
   justify-content: center;
   padding: 4px;
+  height: 100%;
 `;

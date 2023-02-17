@@ -4,8 +4,8 @@ import PokedexContext from './PokedexContext';
 
 export default function PokedexProvider({ children }) {
   const [loading, setLoading] = useState(true);
-  const [offset, setOffset] = useState();
-  const [pokemonsList, setPokemonsList] = useState();
+  const [offset, setOffset] = useState(0);
+  const [pokemonsList, setPokemonsList] = useState([]);
 
   const value = useMemo(() => ({
     loading,
