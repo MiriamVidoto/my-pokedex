@@ -14,7 +14,7 @@ Requisitos funcionais:
 
 ### Passo a passo para acesso da aplicação:
 1. Clone o repositório
-  ``git clone ``
+  ``git clone git@github.com:MiriamVidoto/my-pokedex.git``
 
 2. No repositório clonado, instale as dependências do projeto:
   ``npm install``
