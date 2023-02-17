@@ -1,5 +1,5 @@
-/* eslint-disable react/jsx-no-constructed-context-values */
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
+import PropTypes from 'prop-types';
 import PokedexContext from './PokedexContext';
 
 export default function PokedexProvider({ children }) {
@@ -7,14 +7,14 @@ export default function PokedexProvider({ children }) {
   const [offset, setOffset] = useState();
   const [pokemonsList, setPokemonsList] = useState();
 
-  const value = {
+  const value = useMemo(() => ({
     loading,
     setLoading,
     offset,
     setOffset,
     pokemonsList,
     setPokemonsList,
-  };
+  }), [loading, setLoading, offset, setOffset, pokemonsList, setPokemonsList]);
 
   return (
     <PokedexContext.Provider value={ value }>

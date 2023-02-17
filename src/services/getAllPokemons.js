@@ -1,6 +1,6 @@
 export async function getAllPokemons(offset) {
   try {
-    const url = `https://pokeapi.co/api/v2/pokemon/?limit=40&offset=${offset}`;
+    const url = `https://pokeapi.co/api/v2/pokemon/?limit=24&offset=${offset}`;
     const response = await fetch(url);
     const { results } = await response.json();
     return results;
