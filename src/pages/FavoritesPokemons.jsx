@@ -1,5 +1,12 @@
+import Footer from '../components/Footer';
+import Header from '../components/Header';
+
 export default function FavoritePokemons() {
   return (
-    <h1>FavoritePokemons</h1>
+    <div>
+      <h1>FavoritePokemons</h1>
+      <Header />
+      <Footer />
+    </div>
   );
 }
