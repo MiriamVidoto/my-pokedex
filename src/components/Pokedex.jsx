@@ -20,7 +20,9 @@ export default function Pokedex() {
       setOffset(0);
     }
 
-    const data = await getAllPokemons(0);
+    setLoading(false);
+
+    const data = await getAllPokemons(offset);
     const promisses = data.map(async (pokemon) => {
       const response = await getByUrl(pokemon.url);
       return response;

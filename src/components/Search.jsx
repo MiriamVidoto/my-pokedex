@@ -1,5 +1,9 @@
+import { StyledSidebar } from '../styleds/StyledSidebar';
+
 export default function Search() {
   return (
-    <div>Search</div>
+    <StyledSidebar>
+      Search
+    </StyledSidebar>
   );
 }

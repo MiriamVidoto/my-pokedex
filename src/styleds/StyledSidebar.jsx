@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 
-export const StyledContainer = styled.div`
+export const StyledSidebar = styled.div`
   background-color: #EFEFED;
   display: flex;
-  flex-wrap: wrap;
-  width: 90%;
+  height: 36px;
   justify-content: center;
+  align-items: center;
   padding: 4px;
+  width: 90%;
 `;
