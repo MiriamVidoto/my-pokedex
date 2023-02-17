@@ -33,17 +33,14 @@ export default function Home() {
   return (
     <>
       <Header />
+      <Navbar />
       <StyledMain>
+        <Search />
+        { pokemonsList.length === 1 && <ButtonAllPokemons />}
         { loading && <h1>Loading...</h1> }
-        { !loading && (
-          <>
-            <Navbar />
-            <Search />
-            <ButtonAllPokemons />
-            <Pokedex />
-          </>
-        )}
-        { pokemonsList.length > 1 && <Pagination />}
+        { (loading || pokemonsList.length) > 1 && <Pagination />}
+        { !loading && <Pokedex />}
+        { (loading || pokemonsList.length) > 1 && <Pagination />}
       </StyledMain>
       <Footer />
     </>

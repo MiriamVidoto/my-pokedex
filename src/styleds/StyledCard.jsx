@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const StyledCard = styled.div`
-  background-color: rgb(44, 45, 45);  
+  background-color: #28292A;  
   border-radius: 5px;
   display: flex;
   flex-direction: column;

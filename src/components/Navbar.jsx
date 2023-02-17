@@ -1,9 +1,12 @@
-import { StyledSidebar } from '../styleds/StyledSidebar';
+import { Link } from 'react-router-dom';
+import { StyledNav } from '../styleds/StyledNav';
 
 export default function Navbar() {
   return (
-    <StyledSidebar>
-      Navbar
-    </StyledSidebar>
+    <StyledNav>
+      <Link to="/">Home</Link>
+      <Link to="/about">About</Link>
+      <Link to="/favorites">Favorites</Link>
+    </StyledNav>
   );
 }

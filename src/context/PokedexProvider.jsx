@@ -14,7 +14,7 @@ export default function PokedexProvider({ children }) {
     setOffset,
     pokemonsList,
     setPokemonsList,
-  }), [loading, setLoading, offset, setOffset, pokemonsList, setPokemonsList]);
+  }), [loading, offset, pokemonsList]);
 
   return (
     <PokedexContext.Provider value={ value }>

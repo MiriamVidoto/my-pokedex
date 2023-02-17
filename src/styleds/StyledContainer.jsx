@@ -6,6 +6,5 @@ export const StyledContainer = styled.div`
   flex-wrap: wrap;
   width: 90%;
   justify-content: center;
-  padding: 4px;
-  height: 100%;
+  min-height: 76vh;
 `;
