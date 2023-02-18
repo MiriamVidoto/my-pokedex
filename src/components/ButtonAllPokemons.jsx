@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { StyledSidebar } from '../styleds/StyledSidebar';
 import PokedexContext from '../context/PokedexContext';
-import { getAllPokemons } from '../services/getAllPokemons';
+import { allPokemonsList } from '../utils/allPokemonsList';
 import { StyledButton } from '../styleds/StyledButton';
 
 export default function Search() {
@@ -9,7 +9,7 @@ export default function Search() {
 
   const handleClickAll = async () => {
     setLoading(true);
-    const result = await getAllPokemons();
+    const result = await allPokemonsList();
     setPokemonsList(result);
     setLoading(false);
   };

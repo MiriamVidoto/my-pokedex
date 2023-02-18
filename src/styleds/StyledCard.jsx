@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const StyledCard = styled.div`
-  background-color: #28292A;  
+  background-color: ${(props) => (props.color ? props.color : '#28292a48')};  
   border-radius: 5px;
   display: flex;
   flex-direction: column;
@@ -18,6 +18,6 @@ export const StyledCard = styled.div`
   a{
     height: 100%;
     text-decoration: none;
-    color: white;
+    color: #28292A ;
   }
 `;

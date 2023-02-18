@@ -1,7 +1,7 @@
 import { useContext, useState } from 'react';
 import { StyledSidebar } from '../styleds/StyledSidebar';
 import PokedexContext from '../context/PokedexContext';
-import { getPokemonByName } from '../services/getPokemonByName';
+import { getPokemon } from '../utils/pokemonDetails';
 import { StyledInput } from '../styleds/StyledInput';
 import { StyledButton } from '../styleds/StyledButton';
 
@@ -14,7 +14,7 @@ export default function Search() {
 
   const handleClickSearch = async () => {
     setLoading(true);
-    const result = await getPokemonByName(name);
+    const result = await getPokemon(name);
     setPokemonsList([result]);
     setName('');
     setLoading(false);
@@ -29,6 +29,8 @@ export default function Search() {
         onChange={ handleChange }
       />
       <StyledButton
+        color="#4B824E
+"
         type="button"
         onClick={ handleClickSearch }
       >

@@ -6,9 +6,9 @@ import Pagination from '../components/Pagination';
 import Pokedex from '../components/Pokedex';
 import Search from '../components/Search';
 import ButtonAllPokemons from '../components/ButtonAllPokemons';
-import { StyledMain } from '../styleds/StyledMain';
+import { StyledColumnContainer } from '../styleds/StyledColumnContainer';
 import PokedexContext from '../context/PokedexContext';
-import { getAllPokemons } from '../services/getAllPokemons';
+import { allPokemonsList } from '../utils/allPokemonsList';
 
 export default function Home() {
   const {
@@ -21,7 +21,7 @@ export default function Home() {
 
   const getPokemons = async () => {
     setLoading(true);
-    const data = await getAllPokemons(offset);
+    const data = await allPokemonsList(offset);
     setPokemonsList(data);
     setLoading(false);
   };
@@ -34,14 +34,14 @@ export default function Home() {
     <>
       <Header />
       <Navbar />
-      <StyledMain>
+      <StyledColumnContainer minHeight="86vh">
         <Search />
         { pokemonsList.length === 1 && <ButtonAllPokemons />}
         { loading && <h1>Loading...</h1> }
         { (loading || pokemonsList.length) > 1 && <Pagination />}
         { !loading && <Pokedex />}
         { (loading || pokemonsList.length) > 1 && <Pagination />}
-      </StyledMain>
+      </StyledColumnContainer>
       <Footer />
     </>
   );

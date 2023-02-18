@@ -8,6 +8,7 @@ import PokemonDetails from './pages/PokemonDetails';
 
 export default function App() {
   return (
+
     <PokedexProvider>
       <Routes>
         <Route path="/" element={ <Home /> } />
@@ -17,5 +18,6 @@ export default function App() {
         <Route path="*" element={ <NotFound /> } />
       </Routes>
     </PokedexProvider>
+
   );
 }
