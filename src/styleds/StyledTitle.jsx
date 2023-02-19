@@ -1,10 +1,9 @@
 import styled from 'styled-components';
 
 export const StyledTitle = styled.h1`
-  margin: 0px;
   padding-top: 8px;
-  background-color: ${(props) => (props.color ? props.color : '#28292A')};
-  width:90%;
+  background-color: ${(props) => (props.color ? props.color : 'transparent')};
   text-align: center;
   color: #28292A;
+  width: ${(props) => (props.width ? props.width : '100%')};
 `;

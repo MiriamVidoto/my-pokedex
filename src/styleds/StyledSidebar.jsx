@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
 export const StyledSidebar = styled.div`
-  background-color: #EFEFED;
+  background-color: ${(props) => (props.color ? props.color : '#EFEFED')};
+  height: ${(props) => (props.height ? props.height : '40px')};
   display: flex;
-  height: 36px;
-  justify-content: center;
+  justify-content: ${(props) => (props.justifyContent ? props.justifyContent : 'center')};
   align-items: center;
   width: 90%;
 `;

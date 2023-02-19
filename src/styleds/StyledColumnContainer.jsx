@@ -9,4 +9,8 @@ export const StyledColumnContainer = styled.div`
   min-height: ${(props) => (props.minHeight ? props.minHeight : '0')};
   height: ${(props) => (props.height ? props.height : '')};
   width: ${(props) => (props.width ? props.width : '')};
+
+  span{
+    font-size: 0.8em;
+  }
 `;

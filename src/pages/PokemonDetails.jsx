@@ -14,13 +14,12 @@ export default function PokemonDetails() {
 
   const getPokemonData = async () => {
     const pokemonData = await getPokemon(name);
-    console.log(pokemonData);
     setPokemon(pokemonData);
   };
 
   useEffect(() => {
     getPokemonData();
-  }, []);
+  }, [name]);
 
   return (
     <div>

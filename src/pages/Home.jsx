@@ -9,6 +9,7 @@ import ButtonAllPokemons from '../components/ButtonAllPokemons';
 import { StyledColumnContainer } from '../styleds/StyledColumnContainer';
 import PokedexContext from '../context/PokedexContext';
 import { allPokemonsList } from '../utils/allPokemonsList';
+import Loading from '../components/Loading';
 
 export default function Home() {
   const {
@@ -37,7 +38,7 @@ export default function Home() {
       <StyledColumnContainer>
         <Search />
         { pokemonsList.length === 1 && <ButtonAllPokemons />}
-        { loading && <h1>Loading...</h1> }
+        { loading && <Loading /> }
         { (loading || pokemonsList.length) > 1 && <Pagination />}
         { !loading && <Pokedex />}
         { (loading || pokemonsList.length) > 1 && <Pagination />}

@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import { StyledContainer } from '../styleds/StyledContainer';
-import { StyledTitle } from '../styleds/StyledTitle';
-
+import MainDetails from './MainDetails';
 import DetailsCard from './DetailsCard';
 import EvolutionCard from './EvolutionCard';
 import ImagesCard from './ImagesCard';
@@ -9,10 +8,14 @@ import ImagesCard from './ImagesCard';
 export default function PokemonDetailsCard({ pokemon }) {
   return (
     <>
-      <StyledTitle color={ pokemon.color }>
-        {`#${pokemon.id} ${(pokemon.name).toUpperCase()}`}
-      </StyledTitle>
-      <StyledContainer color={ pokemon.color } minHeight="82vh">
+      <MainDetails
+        id={ pokemon.id }
+        name={ pokemon.name }
+        color={ pokemon.color }
+        types={ pokemon.types }
+        image={ pokemon.image }
+      />
+      <StyledContainer color={ pokemon.color } minHeight="77vh">
         <ImagesCard pokemon={ pokemon } />
         <DetailsCard details={ pokemon.details } />
         <EvolutionCard evolution={ pokemon.evolution } />
@@ -27,10 +30,10 @@ PokemonDetailsCard.propTypes = {
     name: PropTypes.string,
     image: PropTypes.string,
     color: PropTypes.string,
+    types: PropTypes.arrayOf(PropTypes.string),
     details: PropTypes.shape({
       shiny: PropTypes.string,
       description: PropTypes.string,
-      types: PropTypes.arrayOf(PropTypes.string),
       abilities: PropTypes.arrayOf(PropTypes.string),
     }),
     evolution: PropTypes.arrayOf(PropTypes.shape({

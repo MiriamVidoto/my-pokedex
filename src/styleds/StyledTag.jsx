@@ -11,8 +11,7 @@ export const StyledTag = styled.div`
   width: ${(props) => (props.width ? props.width : '280px')};
   display: flex;
   padding: 4px;
-  box-shadow: 1px 1px 2px #00000041;
-  font-size: 0.8em;
+  box-shadow: ${(props) => (props.shadow ? props.shadow : '1px 1px 2px #00000041')};
   color: #28292A;
   text-align: center;
   

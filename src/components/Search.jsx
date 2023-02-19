@@ -29,8 +29,8 @@ export default function Search() {
         onChange={ handleChange }
       />
       <StyledButton
-        color="#4B824E
-"
+        color="#4B824E"
+        disabled={ name.length === 0 }
         type="button"
         onClick={ handleClickSearch }
       >
