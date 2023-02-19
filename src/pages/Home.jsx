@@ -34,7 +34,7 @@ export default function Home() {
     <>
       <Header />
       <Navbar />
-      <StyledColumnContainer minHeight="86vh">
+      <StyledColumnContainer>
         <Search />
         { pokemonsList.length === 1 && <ButtonAllPokemons />}
         { loading && <h1>Loading...</h1> }

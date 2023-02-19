@@ -6,10 +6,11 @@ export const StyledImgCircle = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 320px;
-  width: 320px;
+  margin: 4px;
+  height: ${(props) => (props.size ? props.size : '320px')};
+  width: ${(props) => (props.size ? props.size : '320px')};
 
   img{
-    height: 110%;
+    height: 105%;
   }
 `;

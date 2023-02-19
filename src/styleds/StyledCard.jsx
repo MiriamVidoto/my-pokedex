@@ -8,16 +8,21 @@ export const StyledCard = styled.div`
   margin: 5px;
   text-align: center;
   padding: 8px;
-  height: 150px;
-  width: 150px;
+  height: ${(props) => (props.height ? props.height : '150px')};
+  width: ${(props) => (props.width ? props.width : '150px')};
 
   img { 
-    height: 94px;
+    height: ${(props) => (props.heightImg ? props.heightImg : '80%')};
   }
 
   a{
     height: 100%;
     text-decoration: none;
     color: #28292A ;
+  }
+
+  h4{
+    margin: 0;
+    font-size: 0.8em;
   }
 `;

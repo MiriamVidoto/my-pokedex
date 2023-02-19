@@ -5,11 +5,13 @@ import FavoritePokemons from './pages/FavoritesPokemons';
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
 import PokemonDetails from './pages/PokemonDetails';
+import { StyledGlobal } from './styleds/StyledGlobal';
 
 export default function App() {
   return (
 
     <PokedexProvider>
+      <StyledGlobal />
       <Routes>
         <Route path="/" element={ <Home /> } />
         <Route path="/details/:name" element={ <PokemonDetails /> } />

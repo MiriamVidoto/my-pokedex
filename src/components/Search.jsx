@@ -14,7 +14,7 @@ export default function Search() {
 
   const handleClickSearch = async () => {
     setLoading(true);
-    const result = await getPokemon(name);
+    const result = await getPokemon(name.toLowerCase());
     setPokemonsList([result]);
     setName('');
     setLoading(false);
