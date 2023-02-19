@@ -1,3 +1,4 @@
+import AboutCard from '../components/AboutCard';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Navbar from '../components/Navbar';
@@ -7,7 +8,7 @@ export default function About() {
     <div>
       <Header />
       <Navbar />
-      <h1>About</h1>
+      <AboutCard />
       <Footer />
     </div>
   );
