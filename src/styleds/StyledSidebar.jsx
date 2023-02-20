@@ -5,6 +5,6 @@ export const StyledSidebar = styled.div`
   height: ${(props) => (props.height ? props.height : '40px')};
   display: flex;
   justify-content: ${(props) => (props.justifyContent ? props.justifyContent : 'center')};
-  align-items: center;
+  align-items: ${(props) => (props.alignItems ? props.alignItems : 'center')};
   width: 90%;
 `;

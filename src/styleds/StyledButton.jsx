@@ -10,4 +10,11 @@ export const StyledButton = styled.button`
   margin: 4px;
   padding: 4px;
   width: ${(props) => (props.width ? props.width : '150px')};
+
+  &:hover {
+    background-color: ${(props) => (props.hover ? props.hover : '#28292ae8;')};
+    color: ${(props) => (props.color ? props.color : '#dcdcdbfe')};
+    cursor: pointer;
+  }
+
 `;

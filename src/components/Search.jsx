@@ -30,6 +30,7 @@ export default function Search() {
       />
       <StyledButton
         color="#4B824E"
+        hover="#6B9E6B"
         disabled={ name.length === 0 }
         type="button"
         onClick={ handleClickSearch }

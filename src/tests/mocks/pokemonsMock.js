@@ -3,20 +3,366 @@
 /* eslint-disable max-len */
 export const pokemonsMock = [
   {
-    id: 1,
-    name: 'bulbasaur',
-    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png',
-    color: 'green',
-    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/1.png',
-    types: [
-      'grass',
-      'poison',
-    ],
+    id: 37,
+    name: 'vulpix',
+    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/37.png',
+    color: 'brown',
+    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/37.png',
+    description: 'As it develops, its single white\ntail gains color and splits into six.\nIt is quite warm and cuddly.',
     details: {
-      description: 'The seed on its back is filled\nwith nutrients. The seed grows\nsteadily larger as its body grows.',
+      types: [
+        'fire',
+        'nonexistent',
+      ],
       abilities: [
-        'overgrow',
+        'flash-fire',
+        'drought',
+      ],
+      generation: 'generation-i',
+      stats: [
+        {
+          name: 'hp',
+          points: 38,
+        },
+        {
+          name: 'attack',
+          points: 41,
+        },
+        {
+          name: 'defense',
+          points: 40,
+        },
+        {
+          name: 'special-attack',
+          points: 50,
+        },
+        {
+          name: 'special-defense',
+          points: 65,
+        },
+        {
+          name: 'speed',
+          points: 65,
+        },
+      ],
+    },
+    evolution: [
+      {
+        name: 'vulpix',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/37.png',
+      },
+      {
+        name: 'ninetales',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/38.png',
+      },
+    ],
+  },
+  {
+    id: 38,
+    name: 'ninetales',
+    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/38.png',
+    color: 'yellow',
+    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/38.png',
+    description: 'Some legends claim that each of its\nnine tails has its own unique type\nof special mystical power.',
+    details: {
+      types: [
+        'fire',
+        'nonexistent',
+      ],
+      abilities: [
+        'flash-fire',
+        'drought',
+      ],
+      generation: 'generation-i',
+      stats: [
+        {
+          name: 'hp',
+          points: 73,
+        },
+        {
+          name: 'attack',
+          points: 76,
+        },
+        {
+          name: 'defense',
+          points: 75,
+        },
+        {
+          name: 'special-attack',
+          points: 81,
+        },
+        {
+          name: 'special-defense',
+          points: 100,
+        },
+        {
+          name: 'speed',
+          points: 100,
+        },
+      ],
+    },
+    evolution: [
+      {
+        name: 'vulpix',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/37.png',
+      },
+      {
+        name: 'ninetales',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/38.png',
+      },
+    ],
+  },
+  {
+    id: 39,
+    name: 'jigglypuff',
+    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/39.png',
+    color: 'pink',
+    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/39.png',
+    description: 'If it inflates to sing a lullaby,\nit can perform longer and cause\nsure drowsiness in its audience.',
+    details: {
+      types: [
+        'normal',
+        'fairy',
+      ],
+      abilities: [
+        'cute-charm',
+        'competitive',
+      ],
+      generation: 'generation-i',
+      stats: [
+        {
+          name: 'hp',
+          points: 115,
+        },
+        {
+          name: 'attack',
+          points: 45,
+        },
+        {
+          name: 'defense',
+          points: 20,
+        },
+        {
+          name: 'special-attack',
+          points: 45,
+        },
+        {
+          name: 'special-defense',
+          points: 25,
+        },
+        {
+          name: 'speed',
+          points: 20,
+        },
+      ],
+    },
+    evolution: [
+      {
+        name: 'igglybuff',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/174.png',
+      },
+      {
+        name: 'jigglypuff',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/39.png',
+      },
+      {
+        name: 'wigglytuff',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/40.png',
+      },
+    ],
+  },
+  {
+    id: 40,
+    name: 'wigglytuff',
+    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/40.png',
+    color: 'pink',
+    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/40.png',
+    description: 'Their fur feels so good that if two\nof them snuggle together,\nthey won’t want to be separated.',
+    details: {
+      types: [
+        'normal',
+        'fairy',
+      ],
+      abilities: [
+        'cute-charm',
+        'competitive',
+      ],
+      generation: 'generation-i',
+      stats: [
+        {
+          name: 'hp',
+          points: 140,
+        },
+        {
+          name: 'attack',
+          points: 70,
+        },
+        {
+          name: 'defense',
+          points: 45,
+        },
+        {
+          name: 'special-attack',
+          points: 85,
+        },
+        {
+          name: 'special-defense',
+          points: 50,
+        },
+        {
+          name: 'speed',
+          points: 45,
+        },
+      ],
+    },
+    evolution: [
+      {
+        name: 'igglybuff',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/174.png',
+      },
+      {
+        name: 'jigglypuff',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/39.png',
+      },
+      {
+        name: 'wigglytuff',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/40.png',
+      },
+    ],
+  },
+  {
+    id: 41,
+    name: 'zubat',
+    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/41.png',
+    color: 'purple',
+    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/41.png',
+    description: 'Disliking sunlight, it sleeps\ndeep in forests and caves\nuntil sundown.',
+    details: {
+      types: [
+        'poison',
+        'flying',
+      ],
+      abilities: [
+        'inner-focus',
+        'infiltrator',
+      ],
+      generation: 'generation-i',
+      stats: [
+        {
+          name: 'hp',
+          points: 40,
+        },
+        {
+          name: 'attack',
+          points: 45,
+        },
+        {
+          name: 'defense',
+          points: 35,
+        },
+        {
+          name: 'special-attack',
+          points: 30,
+        },
+        {
+          name: 'special-defense',
+          points: 40,
+        },
+        {
+          name: 'speed',
+          points: 55,
+        },
+      ],
+    },
+    evolution: [
+      {
+        name: 'zubat',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/41.png',
+      },
+      {
+        name: 'golbat',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/42.png',
+      },
+      {
+        name: 'crobat',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/169.png',
+      },
+    ],
+  },
+  {
+    id: 42,
+    name: 'golbat',
+    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/42.png',
+    color: 'purple',
+    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/42.png',
+    description: 'However hard its victim’s hide may be,\nit punctures with sharp fangs\nand gorges itself with blood.',
+    details: {
+      types: [
+        'poison',
+        'flying',
+      ],
+      abilities: [
+        'inner-focus',
+        'infiltrator',
+      ],
+      generation: 'generation-i',
+      stats: [
+        {
+          name: 'hp',
+          points: 75,
+        },
+        {
+          name: 'attack',
+          points: 80,
+        },
+        {
+          name: 'defense',
+          points: 70,
+        },
+        {
+          name: 'special-attack',
+          points: 65,
+        },
+        {
+          name: 'special-defense',
+          points: 75,
+        },
+        {
+          name: 'speed',
+          points: 90,
+        },
+      ],
+    },
+    evolution: [
+      {
+        name: 'zubat',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/41.png',
+      },
+      {
+        name: 'golbat',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/42.png',
+      },
+      {
+        name: 'crobat',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/169.png',
+      },
+    ],
+  },
+  {
+    id: 43,
+    name: 'oddish',
+    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/43.png',
+    color: 'blue',
+    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/43.png',
+    description: 'Awakened by moonlight, it roams\nactively at night. In the day, it stays\nquietly underground.',
+    details: {
+      types: [
+        'grass',
+        'poison',
+      ],
+      abilities: [
         'chlorophyll',
+        'run-away',
       ],
       generation: 'generation-i',
       stats: [
@@ -26,11 +372,573 @@ export const pokemonsMock = [
         },
         {
           name: 'attack',
-          points: 49,
+          points: 50,
         },
         {
           name: 'defense',
-          points: 49,
+          points: 55,
+        },
+        {
+          name: 'special-attack',
+          points: 75,
+        },
+        {
+          name: 'special-defense',
+          points: 65,
+        },
+        {
+          name: 'speed',
+          points: 30,
+        },
+      ],
+    },
+    evolution: [
+      {
+        name: 'oddish',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/43.png',
+      },
+      {
+        name: 'gloom',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/44.png',
+      },
+      {
+        name: 'vileplume',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/45.png',
+      },
+    ],
+  },
+  {
+    id: 44,
+    name: 'gloom',
+    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/44.png',
+    color: 'blue',
+    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/44.png',
+    description: 'What appears to be drool is actually\nsweet honey. It is very sticky and\nclings stubbornly if touched.',
+    details: {
+      types: [
+        'grass',
+        'poison',
+      ],
+      abilities: [
+        'chlorophyll',
+        'stench',
+      ],
+      generation: 'generation-i',
+      stats: [
+        {
+          name: 'hp',
+          points: 60,
+        },
+        {
+          name: 'attack',
+          points: 65,
+        },
+        {
+          name: 'defense',
+          points: 70,
+        },
+        {
+          name: 'special-attack',
+          points: 85,
+        },
+        {
+          name: 'special-defense',
+          points: 75,
+        },
+        {
+          name: 'speed',
+          points: 40,
+        },
+      ],
+    },
+    evolution: [
+      {
+        name: 'oddish',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/43.png',
+      },
+      {
+        name: 'gloom',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/44.png',
+      },
+      {
+        name: 'vileplume',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/45.png',
+      },
+    ],
+  },
+  {
+    id: 45,
+    name: 'vileplume',
+    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/45.png',
+    color: 'red',
+    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/45.png',
+    description: 'Its petals are the largest in the\nworld. As it walks, it scatters\nextremely allergenic pollen.',
+    details: {
+      types: [
+        'grass',
+        'poison',
+      ],
+      abilities: [
+        'chlorophyll',
+        'effect-spore',
+      ],
+      generation: 'generation-i',
+      stats: [
+        {
+          name: 'hp',
+          points: 75,
+        },
+        {
+          name: 'attack',
+          points: 80,
+        },
+        {
+          name: 'defense',
+          points: 85,
+        },
+        {
+          name: 'special-attack',
+          points: 110,
+        },
+        {
+          name: 'special-defense',
+          points: 90,
+        },
+        {
+          name: 'speed',
+          points: 50,
+        },
+      ],
+    },
+    evolution: [
+      {
+        name: 'oddish',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/43.png',
+      },
+      {
+        name: 'gloom',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/44.png',
+      },
+      {
+        name: 'vileplume',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/45.png',
+      },
+    ],
+  },
+  {
+    id: 46,
+    name: 'paras',
+    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/46.png',
+    color: 'red',
+    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/46.png',
+    description: 'It is doused with mushroom spores\nwhen it is born. As its body grows,\nmushrooms sprout from its back.',
+    details: {
+      types: [
+        'bug',
+        'grass',
+      ],
+      abilities: [
+        'effect-spore',
+        'dry-skin',
+      ],
+      generation: 'generation-i',
+      stats: [
+        {
+          name: 'hp',
+          points: 35,
+        },
+        {
+          name: 'attack',
+          points: 70,
+        },
+        {
+          name: 'defense',
+          points: 55,
+        },
+        {
+          name: 'special-attack',
+          points: 45,
+        },
+        {
+          name: 'special-defense',
+          points: 55,
+        },
+        {
+          name: 'speed',
+          points: 25,
+        },
+      ],
+    },
+    evolution: [
+      {
+        name: 'paras',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/46.png',
+      },
+      {
+        name: 'parasect',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/47.png',
+      },
+    ],
+  },
+  {
+    id: 47,
+    name: 'parasect',
+    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/47.png',
+    color: 'red',
+    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/47.png',
+    description: 'It stays mostly in dark, damp places,\nthe preference not of the bug, but\nof the big mushroom on its back.',
+    details: {
+      types: [
+        'bug',
+        'grass',
+      ],
+      abilities: [
+        'effect-spore',
+        'dry-skin',
+      ],
+      generation: 'generation-i',
+      stats: [
+        {
+          name: 'hp',
+          points: 60,
+        },
+        {
+          name: 'attack',
+          points: 95,
+        },
+        {
+          name: 'defense',
+          points: 80,
+        },
+        {
+          name: 'special-attack',
+          points: 60,
+        },
+        {
+          name: 'special-defense',
+          points: 80,
+        },
+        {
+          name: 'speed',
+          points: 30,
+        },
+      ],
+    },
+    evolution: [
+      {
+        name: 'paras',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/46.png',
+      },
+      {
+        name: 'parasect',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/47.png',
+      },
+    ],
+  },
+  {
+    id: 48,
+    name: 'venonat',
+    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/48.png',
+    color: 'purple',
+    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/48.png',
+    description: 'Its eyes also function as radar\nunits. It catches and eats small\nbugs that hide in darkness.',
+    details: {
+      types: [
+        'bug',
+        'poison',
+      ],
+      abilities: [
+        'compound-eyes',
+        'tinted-lens',
+      ],
+      generation: 'generation-i',
+      stats: [
+        {
+          name: 'hp',
+          points: 60,
+        },
+        {
+          name: 'attack',
+          points: 55,
+        },
+        {
+          name: 'defense',
+          points: 50,
+        },
+        {
+          name: 'special-attack',
+          points: 40,
+        },
+        {
+          name: 'special-defense',
+          points: 55,
+        },
+        {
+          name: 'speed',
+          points: 45,
+        },
+      ],
+    },
+    evolution: [
+      {
+        name: 'venonat',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/48.png',
+      },
+      {
+        name: 'venomoth',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/49.png',
+      },
+    ],
+  },
+  {
+    id: 49,
+    name: 'venomoth',
+    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/49.png',
+    color: 'purple',
+    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/49.png',
+    description: 'When it attacks, it flaps its large\nwings violently to scatter its\npoisonous powder all around.',
+    details: {
+      types: [
+        'bug',
+        'poison',
+      ],
+      abilities: [
+        'shield-dust',
+        'tinted-lens',
+      ],
+      generation: 'generation-i',
+      stats: [
+        {
+          name: 'hp',
+          points: 70,
+        },
+        {
+          name: 'attack',
+          points: 65,
+        },
+        {
+          name: 'defense',
+          points: 60,
+        },
+        {
+          name: 'special-attack',
+          points: 90,
+        },
+        {
+          name: 'special-defense',
+          points: 75,
+        },
+        {
+          name: 'speed',
+          points: 90,
+        },
+      ],
+    },
+    evolution: [
+      {
+        name: 'venonat',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/48.png',
+      },
+      {
+        name: 'venomoth',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/49.png',
+      },
+    ],
+  },
+  {
+    id: 50,
+    name: 'diglett',
+    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/50.png',
+    color: 'brown',
+    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/50.png',
+    description: 'A Pokémon that lives underground.\nBecause of its dark habitat, it is\nrepelled by bright sunlight.',
+    details: {
+      types: [
+        'ground',
+        'nonexistent',
+      ],
+      abilities: [
+        'sand-veil',
+        'arena-trap',
+      ],
+      generation: 'generation-i',
+      stats: [
+        {
+          name: 'hp',
+          points: 10,
+        },
+        {
+          name: 'attack',
+          points: 55,
+        },
+        {
+          name: 'defense',
+          points: 25,
+        },
+        {
+          name: 'special-attack',
+          points: 35,
+        },
+        {
+          name: 'special-defense',
+          points: 45,
+        },
+        {
+          name: 'speed',
+          points: 95,
+        },
+      ],
+    },
+    evolution: [
+      {
+        name: 'diglett',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/50.png',
+      },
+      {
+        name: 'dugtrio',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/51.png',
+      },
+    ],
+  },
+  {
+    id: 51,
+    name: 'dugtrio',
+    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/51.png',
+    color: 'brown',
+    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/51.png',
+    description: 'Its three heads bob separately up\nand down to loosen the soil nearby,\nmaking it easier for it to burrow.',
+    details: {
+      types: [
+        'ground',
+        'nonexistent',
+      ],
+      abilities: [
+        'sand-veil',
+        'arena-trap',
+      ],
+      generation: 'generation-i',
+      stats: [
+        {
+          name: 'hp',
+          points: 35,
+        },
+        {
+          name: 'attack',
+          points: 100,
+        },
+        {
+          name: 'defense',
+          points: 50,
+        },
+        {
+          name: 'special-attack',
+          points: 50,
+        },
+        {
+          name: 'special-defense',
+          points: 70,
+        },
+        {
+          name: 'speed',
+          points: 120,
+        },
+      ],
+    },
+    evolution: [
+      {
+        name: 'diglett',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/50.png',
+      },
+      {
+        name: 'dugtrio',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/51.png',
+      },
+    ],
+  },
+  {
+    id: 52,
+    name: 'meowth',
+    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/52.png',
+    color: 'yellow',
+    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/52.png',
+    description: 'It is nocturnal in nature. If it\nspots something shiny, its eyes\nglitter brightly.',
+    details: {
+      types: [
+        'normal',
+        'nonexistent',
+      ],
+      abilities: [
+        'pickup',
+        'technician',
+      ],
+      generation: 'generation-i',
+      stats: [
+        {
+          name: 'hp',
+          points: 40,
+        },
+        {
+          name: 'attack',
+          points: 45,
+        },
+        {
+          name: 'defense',
+          points: 35,
+        },
+        {
+          name: 'special-attack',
+          points: 40,
+        },
+        {
+          name: 'special-defense',
+          points: 40,
+        },
+        {
+          name: 'speed',
+          points: 90,
+        },
+      ],
+    },
+    evolution: [
+      {
+        name: 'meowth',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/52.png',
+      },
+      {
+        name: 'persian',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/53.png',
+      },
+    ],
+  },
+  {
+    id: 53,
+    name: 'persian',
+    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/53.png',
+    color: 'yellow',
+    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/53.png',
+    description: 'Many adore it for its sophisticated air.\nHowever, it will lash out and\nscratch for little reason.',
+    details: {
+      types: [
+        'normal',
+        'nonexistent',
+      ],
+      abilities: [
+        'limber',
+        'technician',
+      ],
+      generation: 'generation-i',
+      stats: [
+        {
+          name: 'hp',
+          points: 65,
+        },
+        {
+          name: 'attack',
+          points: 70,
+        },
+        {
+          name: 'defense',
+          points: 60,
         },
         {
           name: 'special-attack',
@@ -42,99 +950,91 @@ export const pokemonsMock = [
         },
         {
           name: 'speed',
-          points: 45,
+          points: 115,
         },
       ],
     },
     evolution: [
       {
-        name: 'bulbasaur',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png',
+        name: 'meowth',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/52.png',
       },
       {
-        name: 'ivysaur',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/2.png',
-      },
-      {
-        name: 'venusaur',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/3.png',
+        name: 'persian',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/53.png',
       },
     ],
   },
   {
-    id: 2,
-    name: 'ivysaur',
-    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/2.png',
-    color: 'green',
-    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/2.png',
-    types: [
-      'grass',
-      'poison',
-    ],
+    id: 54,
+    name: 'psyduck',
+    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/54.png',
+    color: 'yellow',
+    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/54.png',
+    description: 'It has mystical powers but doesn’t\nrecall that it has used them.\nThat is why it always looks puzzled.',
     details: {
-      description: 'Exposure to sunlight adds to its\nstrength. Sunlight also makes the\nbud on its back grow larger.',
+      types: [
+        'water',
+        'nonexistent',
+      ],
       abilities: [
-        'overgrow',
-        'chlorophyll',
+        'damp',
+        'cloud-nine',
       ],
       generation: 'generation-i',
       stats: [
         {
           name: 'hp',
-          points: 60,
+          points: 50,
         },
         {
           name: 'attack',
-          points: 62,
+          points: 52,
         },
         {
           name: 'defense',
-          points: 63,
+          points: 48,
         },
         {
           name: 'special-attack',
-          points: 80,
+          points: 65,
         },
         {
           name: 'special-defense',
-          points: 80,
+          points: 50,
         },
         {
           name: 'speed',
-          points: 60,
+          points: 55,
         },
       ],
     },
     evolution: [
       {
-        name: 'bulbasaur',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png',
+        name: 'psyduck',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/54.png',
       },
       {
-        name: 'ivysaur',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/2.png',
-      },
-      {
-        name: 'venusaur',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/3.png',
+        name: 'golduck',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/55.png',
       },
     ],
   },
   {
-    id: 3,
-    name: 'venusaur',
-    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/3.png',
-    color: 'green',
-    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/3.png',
-    types: [
-      'grass',
-      'poison',
-    ],
+    id: 55,
+    name: 'golduck',
+    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/55.png',
+    color: 'blue',
+    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/55.png',
+    description: 'It is seen swimming dynamically and\nelegantly using its well-developed\nlimbs and flippers.',
     details: {
-      description: 'By spreading the broad petals of\nits flower and catching the sun’s\nrays, it fills its body with power.',
+      types: [
+        'water',
+        'nonexistent',
+      ],
       abilities: [
-        'overgrow',
-        'chlorophyll',
+        'damp',
+        'cloud-nine',
       ],
       generation: 'generation-i',
       stats: [
@@ -148,306 +1048,11 @@ export const pokemonsMock = [
         },
         {
           name: 'defense',
-          points: 83,
-        },
-        {
-          name: 'special-attack',
-          points: 100,
-        },
-        {
-          name: 'special-defense',
-          points: 100,
-        },
-        {
-          name: 'speed',
-          points: 80,
-        },
-      ],
-    },
-    evolution: [
-      {
-        name: 'bulbasaur',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png',
-      },
-      {
-        name: 'ivysaur',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/2.png',
-      },
-      {
-        name: 'venusaur',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/3.png',
-      },
-    ],
-  },
-  {
-    id: 4,
-    name: 'charmander',
-    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png',
-    color: 'red',
-    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/4.png',
-    types: [
-      'fire',
-      'nonexistent',
-    ],
-    details: {
-      description: 'The flame on its tail shows the\nstrength of its life force. If it is weak,\nthe flame also burns weakly.',
-      abilities: [
-        'blaze',
-        'solar-power',
-      ],
-      generation: 'generation-i',
-      stats: [
-        {
-          name: 'hp',
-          points: 39,
-        },
-        {
-          name: 'attack',
-          points: 52,
-        },
-        {
-          name: 'defense',
-          points: 43,
-        },
-        {
-          name: 'special-attack',
-          points: 60,
-        },
-        {
-          name: 'special-defense',
-          points: 50,
-        },
-        {
-          name: 'speed',
-          points: 65,
-        },
-      ],
-    },
-    evolution: [
-      {
-        name: 'charmander',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png',
-      },
-      {
-        name: 'charmeleon',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/5.png',
-      },
-      {
-        name: 'charizard',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png',
-      },
-    ],
-  },
-  {
-    id: 5,
-    name: 'charmeleon',
-    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/5.png',
-    color: 'red',
-    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/5.png',
-    types: [
-      'fire',
-      'nonexistent',
-    ],
-    details: {
-      description: 'It is very hotheaded by nature,\nso it constantly seeks opponents.\nIt calms down only when it wins.',
-      abilities: [
-        'blaze',
-        'solar-power',
-      ],
-      generation: 'generation-i',
-      stats: [
-        {
-          name: 'hp',
-          points: 58,
-        },
-        {
-          name: 'attack',
-          points: 64,
-        },
-        {
-          name: 'defense',
-          points: 58,
-        },
-        {
-          name: 'special-attack',
-          points: 80,
-        },
-        {
-          name: 'special-defense',
-          points: 65,
-        },
-        {
-          name: 'speed',
-          points: 80,
-        },
-      ],
-    },
-    evolution: [
-      {
-        name: 'charmander',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png',
-      },
-      {
-        name: 'charmeleon',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/5.png',
-      },
-      {
-        name: 'charizard',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png',
-      },
-    ],
-  },
-  {
-    id: 6,
-    name: 'charizard',
-    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png',
-    color: 'red',
-    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/6.png',
-    types: [
-      'fire',
-      'flying',
-    ],
-    details: {
-      description: 'If CHARIZARD becomes furious,\nthe flame at the tip of its tail flares\nup in a light blue shade.',
-      abilities: [
-        'blaze',
-        'solar-power',
-      ],
-      generation: 'generation-i',
-      stats: [
-        {
-          name: 'hp',
-          points: 78,
-        },
-        {
-          name: 'attack',
-          points: 84,
-        },
-        {
-          name: 'defense',
           points: 78,
         },
         {
           name: 'special-attack',
-          points: 109,
-        },
-        {
-          name: 'special-defense',
-          points: 85,
-        },
-        {
-          name: 'speed',
-          points: 100,
-        },
-      ],
-    },
-    evolution: [
-      {
-        name: 'charmander',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png',
-      },
-      {
-        name: 'charmeleon',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/5.png',
-      },
-      {
-        name: 'charizard',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png',
-      },
-    ],
-  },
-  {
-    id: 7,
-    name: 'squirtle',
-    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png',
-    color: 'blue',
-    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/7.png',
-    types: [
-      'water',
-      'nonexistent',
-    ],
-    details: {
-      description: 'The shell is soft when it is born.\nIt soon becomes so resilient,\nprodding fingers will bounce off it.',
-      abilities: [
-        'torrent',
-        'rain-dish',
-      ],
-      generation: 'generation-i',
-      stats: [
-        {
-          name: 'hp',
-          points: 44,
-        },
-        {
-          name: 'attack',
-          points: 48,
-        },
-        {
-          name: 'defense',
-          points: 65,
-        },
-        {
-          name: 'special-attack',
-          points: 50,
-        },
-        {
-          name: 'special-defense',
-          points: 64,
-        },
-        {
-          name: 'speed',
-          points: 43,
-        },
-      ],
-    },
-    evolution: [
-      {
-        name: 'squirtle',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png',
-      },
-      {
-        name: 'wartortle',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/8.png',
-      },
-      {
-        name: 'blastoise',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/9.png',
-      },
-    ],
-  },
-  {
-    id: 8,
-    name: 'wartortle',
-    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/8.png',
-    color: 'blue',
-    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/8.png',
-    types: [
-      'water',
-      'nonexistent',
-    ],
-    details: {
-      description: 'It is a well-established symbol of\nlongevity. If its shell has algae on it,\nthat WARTORTLE is very old.',
-      abilities: [
-        'torrent',
-        'rain-dish',
-      ],
-      generation: 'generation-i',
-      stats: [
-        {
-          name: 'hp',
-          points: 59,
-        },
-        {
-          name: 'attack',
-          points: 63,
-        },
-        {
-          name: 'defense',
-          points: 80,
-        },
-        {
-          name: 'special-attack',
-          points: 65,
+          points: 95,
         },
         {
           name: 'special-defense',
@@ -455,864 +1060,278 @@ export const pokemonsMock = [
         },
         {
           name: 'speed',
-          points: 58,
+          points: 85,
         },
       ],
     },
     evolution: [
       {
-        name: 'squirtle',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png',
+        name: 'psyduck',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/54.png',
       },
       {
-        name: 'wartortle',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/8.png',
-      },
-      {
-        name: 'blastoise',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/9.png',
+        name: 'golduck',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/55.png',
       },
     ],
   },
   {
-    id: 9,
-    name: 'blastoise',
-    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/9.png',
-    color: 'blue',
-    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/9.png',
-    types: [
-      'water',
-      'nonexistent',
-    ],
+    id: 56,
+    name: 'mankey',
+    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/56.png',
+    color: 'brown',
+    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/56.png',
+    description: 'It is extremely ill-tempered.\nGroups of them will attack any\nhandy target for no reason.',
     details: {
-      description: 'It deliberately makes itself heavy\nso it can withstand the recoil\nof the water jets it fires.',
+      types: [
+        'fighting',
+        'nonexistent',
+      ],
       abilities: [
-        'torrent',
-        'rain-dish',
+        'vital-spirit',
+        'anger-point',
       ],
       generation: 'generation-i',
       stats: [
         {
           name: 'hp',
-          points: 79,
+          points: 40,
         },
         {
           name: 'attack',
-          points: 83,
+          points: 80,
         },
         {
           name: 'defense',
-          points: 100,
+          points: 35,
         },
         {
           name: 'special-attack',
-          points: 85,
+          points: 35,
         },
         {
           name: 'special-defense',
+          points: 45,
+        },
+        {
+          name: 'speed',
+          points: 70,
+        },
+      ],
+    },
+    evolution: [
+      {
+        name: 'mankey',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/56.png',
+      },
+      {
+        name: 'primeape',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/57.png',
+      },
+      {
+        name: 'annihilape',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/979.png',
+      },
+    ],
+  },
+  {
+    id: 57,
+    name: 'primeape',
+    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/57.png',
+    color: 'brown',
+    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/57.png',
+    description: 'If approached while asleep,\nit may awaken and angrily give chase\nin a groggy state of semi-sleep.',
+    details: {
+      types: [
+        'fighting',
+        'nonexistent',
+      ],
+      abilities: [
+        'vital-spirit',
+        'anger-point',
+      ],
+      generation: 'generation-i',
+      stats: [
+        {
+          name: 'hp',
+          points: 65,
+        },
+        {
+          name: 'attack',
           points: 105,
         },
         {
-          name: 'speed',
-          points: 78,
-        },
-      ],
-    },
-    evolution: [
-      {
-        name: 'squirtle',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png',
-      },
-      {
-        name: 'wartortle',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/8.png',
-      },
-      {
-        name: 'blastoise',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/9.png',
-      },
-    ],
-  },
-  {
-    id: 10,
-    name: 'caterpie',
-    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10.png',
-    color: 'green',
-    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/10.png',
-    types: [
-      'bug',
-      'nonexistent',
-    ],
-    details: {
-      description: 'It releases a stench from its red\nantenna to repel enemies. It\ngrows by molting repeatedly.',
-      abilities: [
-        'shield-dust',
-        'run-away',
-      ],
-      generation: 'generation-i',
-      stats: [
-        {
-          name: 'hp',
-          points: 45,
-        },
-        {
-          name: 'attack',
-          points: 30,
-        },
-        {
           name: 'defense',
-          points: 35,
+          points: 60,
         },
         {
           name: 'special-attack',
-          points: 20,
+          points: 60,
         },
         {
           name: 'special-defense',
-          points: 20,
+          points: 70,
         },
         {
           name: 'speed',
-          points: 45,
+          points: 95,
         },
       ],
     },
     evolution: [
       {
-        name: 'caterpie',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10.png',
+        name: 'mankey',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/56.png',
       },
       {
-        name: 'metapod',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/11.png',
+        name: 'primeape',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/57.png',
       },
       {
-        name: 'butterfree',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/12.png',
+        name: 'annihilape',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/979.png',
       },
     ],
   },
   {
-    id: 11,
-    name: 'metapod',
-    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/11.png',
-    color: 'green',
-    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/11.png',
-    types: [
-      'bug',
-      'nonexistent',
-    ],
+    id: 58,
+    name: 'growlithe',
+    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/58.png',
+    color: 'brown',
+    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/58.png',
+    description: 'It has a brave and trustworthy\nnature. It fearlessly stands up\nto bigger and stronger foes.',
     details: {
-      description: 'Inside the shell, it is soft and\nweak as it prepares to evolve.\nIt stays motionless in the shell.',
-      abilities: [
-        'shed-skin',
+      types: [
+        'fire',
         'nonexistent',
       ],
+      abilities: [
+        'intimidate',
+        'flash-fire',
+      ],
       generation: 'generation-i',
       stats: [
         {
           name: 'hp',
-          points: 50,
-        },
-        {
-          name: 'attack',
-          points: 20,
-        },
-        {
-          name: 'defense',
           points: 55,
         },
         {
-          name: 'special-attack',
-          points: 25,
-        },
-        {
-          name: 'special-defense',
-          points: 25,
-        },
-        {
-          name: 'speed',
-          points: 30,
-        },
-      ],
-    },
-    evolution: [
-      {
-        name: 'caterpie',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10.png',
-      },
-      {
-        name: 'metapod',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/11.png',
-      },
-      {
-        name: 'butterfree',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/12.png',
-      },
-    ],
-  },
-  {
-    id: 12,
-    name: 'butterfree',
-    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/12.png',
-    color: 'white',
-    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/12.png',
-    types: [
-      'bug',
-      'flying',
-    ],
-    details: {
-      description: 'It collects honey every day. It rubs\nhoney onto the hairs on its legs\nto carry it back to its nest.',
-      abilities: [
-        'compound-eyes',
-        'tinted-lens',
-      ],
-      generation: 'generation-i',
-      stats: [
-        {
-          name: 'hp',
-          points: 60,
-        },
-        {
           name: 'attack',
+          points: 70,
+        },
+        {
+          name: 'defense',
           points: 45,
         },
         {
-          name: 'defense',
-          points: 50,
-        },
-        {
           name: 'special-attack',
-          points: 90,
-        },
-        {
-          name: 'special-defense',
-          points: 80,
-        },
-        {
-          name: 'speed',
           points: 70,
         },
-      ],
-    },
-    evolution: [
-      {
-        name: 'caterpie',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10.png',
-      },
-      {
-        name: 'metapod',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/11.png',
-      },
-      {
-        name: 'butterfree',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/12.png',
-      },
-    ],
-  },
-  {
-    id: 13,
-    name: 'weedle',
-    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/13.png',
-    color: 'brown',
-    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/13.png',
-    types: [
-      'bug',
-      'poison',
-    ],
-    details: {
-      description: 'Its poison stinger is very powerful.\nIts bright-colored body is intended\nto warn off its enemies.',
-      abilities: [
-        'shield-dust',
-        'run-away',
-      ],
-      generation: 'generation-i',
-      stats: [
-        {
-          name: 'hp',
-          points: 40,
-        },
-        {
-          name: 'attack',
-          points: 35,
-        },
-        {
-          name: 'defense',
-          points: 30,
-        },
-        {
-          name: 'special-attack',
-          points: 20,
-        },
         {
           name: 'special-defense',
-          points: 20,
+          points: 50,
         },
         {
           name: 'speed',
-          points: 50,
+          points: 60,
         },
       ],
     },
     evolution: [
       {
-        name: 'weedle',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/13.png',
+        name: 'growlithe',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/58.png',
       },
       {
-        name: 'kakuna',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/14.png',
-      },
-      {
-        name: 'beedrill',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/15.png',
+        name: 'arcanine',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/59.png',
       },
     ],
   },
   {
-    id: 14,
-    name: 'kakuna',
-    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/14.png',
-    color: 'yellow',
-    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/14.png',
-    types: [
-      'bug',
-      'poison',
-    ],
+    id: 59,
+    name: 'arcanine',
+    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/59.png',
+    color: 'brown',
+    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/59.png',
+    description: 'This legendary Chinese Pokémon is\nconsidered magnificent. Many people\nare enchanted by its grand mane.',
     details: {
-      description: 'Although it is a cocoon, it can\nmove a little. It can extend its\npoison barb if it is attacked.',
-      abilities: [
-        'shed-skin',
+      types: [
+        'fire',
         'nonexistent',
       ],
-      generation: 'generation-i',
-      stats: [
-        {
-          name: 'hp',
-          points: 45,
-        },
-        {
-          name: 'attack',
-          points: 25,
-        },
-        {
-          name: 'defense',
-          points: 50,
-        },
-        {
-          name: 'special-attack',
-          points: 25,
-        },
-        {
-          name: 'special-defense',
-          points: 25,
-        },
-        {
-          name: 'speed',
-          points: 35,
-        },
-      ],
-    },
-    evolution: [
-      {
-        name: 'weedle',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/13.png',
-      },
-      {
-        name: 'kakuna',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/14.png',
-      },
-      {
-        name: 'beedrill',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/15.png',
-      },
-    ],
-  },
-  {
-    id: 15,
-    name: 'beedrill',
-    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/15.png',
-    color: 'yellow',
-    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/15.png',
-    types: [
-      'bug',
-      'poison',
-    ],
-    details: {
-      description: 'Its best attack involves flying\naround at high speed, striking with\npoison needles, then flying off.',
       abilities: [
-        'swarm',
-        'sniper',
+        'intimidate',
+        'flash-fire',
       ],
       generation: 'generation-i',
       stats: [
         {
           name: 'hp',
-          points: 65,
-        },
-        {
-          name: 'attack',
           points: 90,
         },
         {
+          name: 'attack',
+          points: 110,
+        },
+        {
           name: 'defense',
-          points: 40,
-        },
-        {
-          name: 'special-attack',
-          points: 45,
-        },
-        {
-          name: 'special-defense',
           points: 80,
         },
         {
-          name: 'speed',
-          points: 75,
-        },
-      ],
-    },
-    evolution: [
-      {
-        name: 'weedle',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/13.png',
-      },
-      {
-        name: 'kakuna',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/14.png',
-      },
-      {
-        name: 'beedrill',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/15.png',
-      },
-    ],
-  },
-  {
-    id: 16,
-    name: 'pidgey',
-    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/16.png',
-    color: 'brown',
-    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/16.png',
-    types: [
-      'normal',
-      'flying',
-    ],
-    details: {
-      description: 'It usually hides in tall grass.\nBecause it dislikes fighting,\nit protects itself by kicking up sand.',
-      abilities: [
-        'keen-eye',
-        'tangled-feet',
-      ],
-      generation: 'generation-i',
-      stats: [
-        {
-          name: 'hp',
-          points: 40,
-        },
-        {
-          name: 'attack',
-          points: 45,
-        },
-        {
-          name: 'defense',
-          points: 40,
-        },
-        {
           name: 'special-attack',
-          points: 35,
-        },
-        {
-          name: 'special-defense',
-          points: 35,
-        },
-        {
-          name: 'speed',
-          points: 56,
-        },
-      ],
-    },
-    evolution: [
-      {
-        name: 'pidgey',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/16.png',
-      },
-      {
-        name: 'pidgeotto',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/17.png',
-      },
-      {
-        name: 'pidgeot',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/18.png',
-      },
-    ],
-  },
-  {
-    id: 17,
-    name: 'pidgeotto',
-    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/17.png',
-    color: 'brown',
-    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/17.png',
-    types: [
-      'normal',
-      'flying',
-    ],
-    details: {
-      description: 'It has outstanding vision. However\nhigh it flies, it is able to distinguish\nthe movements of its prey.',
-      abilities: [
-        'keen-eye',
-        'tangled-feet',
-      ],
-      generation: 'generation-i',
-      stats: [
-        {
-          name: 'hp',
-          points: 63,
-        },
-        {
-          name: 'attack',
-          points: 60,
-        },
-        {
-          name: 'defense',
-          points: 55,
-        },
-        {
-          name: 'special-attack',
-          points: 50,
-        },
-        {
-          name: 'special-defense',
-          points: 50,
-        },
-        {
-          name: 'speed',
-          points: 71,
-        },
-      ],
-    },
-    evolution: [
-      {
-        name: 'pidgey',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/16.png',
-      },
-      {
-        name: 'pidgeotto',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/17.png',
-      },
-      {
-        name: 'pidgeot',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/18.png',
-      },
-    ],
-  },
-  {
-    id: 18,
-    name: 'pidgeot',
-    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/18.png',
-    color: 'brown',
-    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/18.png',
-    types: [
-      'normal',
-      'flying',
-    ],
-    details: {
-      description: 'Its well-developed chest muscles make\nit strong enough to whip up a gusty\nwindstorm with just a few flaps.',
-      abilities: [
-        'keen-eye',
-        'tangled-feet',
-      ],
-      generation: 'generation-i',
-      stats: [
-        {
-          name: 'hp',
-          points: 83,
-        },
-        {
-          name: 'attack',
-          points: 80,
-        },
-        {
-          name: 'defense',
-          points: 75,
-        },
-        {
-          name: 'special-attack',
-          points: 70,
-        },
-        {
-          name: 'special-defense',
-          points: 70,
-        },
-        {
-          name: 'speed',
-          points: 101,
-        },
-      ],
-    },
-    evolution: [
-      {
-        name: 'pidgey',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/16.png',
-      },
-      {
-        name: 'pidgeotto',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/17.png',
-      },
-      {
-        name: 'pidgeot',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/18.png',
-      },
-    ],
-  },
-  {
-    id: 19,
-    name: 'rattata',
-    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/19.png',
-    color: 'purple',
-    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/19.png',
-    types: [
-      'normal',
-      'nonexistent',
-    ],
-    details: {
-      description: 'Cautious in the extreme, its\nhardy vitality lets it live in\nany kind of environment.',
-      abilities: [
-        'run-away',
-        'guts',
-      ],
-      generation: 'generation-i',
-      stats: [
-        {
-          name: 'hp',
-          points: 30,
-        },
-        {
-          name: 'attack',
-          points: 56,
-        },
-        {
-          name: 'defense',
-          points: 35,
-        },
-        {
-          name: 'special-attack',
-          points: 25,
-        },
-        {
-          name: 'special-defense',
-          points: 35,
-        },
-        {
-          name: 'speed',
-          points: 72,
-        },
-      ],
-    },
-    evolution: [
-      {
-        name: 'rattata',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/19.png',
-      },
-      {
-        name: 'raticate',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/20.png',
-      },
-    ],
-  },
-  {
-    id: 20,
-    name: 'raticate',
-    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/20.png',
-    color: 'brown',
-    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/20.png',
-    types: [
-      'normal',
-      'nonexistent',
-    ],
-    details: {
-      description: 'It whittles its constantly growing\nfangs by gnawing on hard things.\nIt can chew apart cinder walls.',
-      abilities: [
-        'run-away',
-        'guts',
-      ],
-      generation: 'generation-i',
-      stats: [
-        {
-          name: 'hp',
-          points: 55,
-        },
-        {
-          name: 'attack',
-          points: 81,
-        },
-        {
-          name: 'defense',
-          points: 60,
-        },
-        {
-          name: 'special-attack',
-          points: 50,
-        },
-        {
-          name: 'special-defense',
-          points: 70,
-        },
-        {
-          name: 'speed',
-          points: 97,
-        },
-      ],
-    },
-    evolution: [
-      {
-        name: 'rattata',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/19.png',
-      },
-      {
-        name: 'raticate',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/20.png',
-      },
-    ],
-  },
-  {
-    id: 21,
-    name: 'spearow',
-    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/21.png',
-    color: 'brown',
-    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/21.png',
-    types: [
-      'normal',
-      'flying',
-    ],
-    details: {
-      description: 'It flaps its short wings to flush out\ninsects from tall grass. It then\nplucks them with its stubby beak.',
-      abilities: [
-        'keen-eye',
-        'sniper',
-      ],
-      generation: 'generation-i',
-      stats: [
-        {
-          name: 'hp',
-          points: 40,
-        },
-        {
-          name: 'attack',
-          points: 60,
-        },
-        {
-          name: 'defense',
-          points: 30,
-        },
-        {
-          name: 'special-attack',
-          points: 31,
-        },
-        {
-          name: 'special-defense',
-          points: 31,
-        },
-        {
-          name: 'speed',
-          points: 70,
-        },
-      ],
-    },
-    evolution: [
-      {
-        name: 'spearow',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/21.png',
-      },
-      {
-        name: 'fearow',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/22.png',
-      },
-    ],
-  },
-  {
-    id: 22,
-    name: 'fearow',
-    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/22.png',
-    color: 'brown',
-    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/22.png',
-    types: [
-      'normal',
-      'flying',
-    ],
-    details: {
-      description: 'It shoots itself suddenly high into\nthe sky, then plummets down in\none fell swoop to strike its prey.',
-      abilities: [
-        'keen-eye',
-        'sniper',
-      ],
-      generation: 'generation-i',
-      stats: [
-        {
-          name: 'hp',
-          points: 65,
-        },
-        {
-          name: 'attack',
-          points: 90,
-        },
-        {
-          name: 'defense',
-          points: 65,
-        },
-        {
-          name: 'special-attack',
-          points: 61,
-        },
-        {
-          name: 'special-defense',
-          points: 61,
-        },
-        {
-          name: 'speed',
           points: 100,
         },
+        {
+          name: 'special-defense',
+          points: 80,
+        },
+        {
+          name: 'speed',
+          points: 95,
+        },
       ],
     },
     evolution: [
       {
-        name: 'spearow',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/21.png',
+        name: 'growlithe',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/58.png',
       },
       {
-        name: 'fearow',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/22.png',
+        name: 'arcanine',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/59.png',
       },
     ],
   },
   {
-    id: 23,
-    name: 'ekans',
-    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/23.png',
-    color: 'purple',
-    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/23.png',
-    types: [
-      'poison',
-      'nonexistent',
-    ],
+    id: 60,
+    name: 'poliwag',
+    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/60.png',
+    color: 'blue',
+    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/60.png',
+    description: 'Because it is inept at walking on\nits newly grown legs, it always \nswims around in water.',
     details: {
-      description: 'It can freely detach its jaw to\nswallow large prey whole. It can\nbecome too heavy to move, however.',
+      types: [
+        'water',
+        'nonexistent',
+      ],
       abilities: [
-        'intimidate',
-        'shed-skin',
+        'water-absorb',
+        'damp',
       ],
       generation: 'generation-i',
       stats: [
         {
           name: 'hp',
-          points: 35,
+          points: 40,
         },
         {
           name: 'attack',
-          points: 60,
+          points: 50,
         },
         {
           name: 'defense',
-          points: 44,
+          points: 40,
         },
         {
           name: 'special-attack',
@@ -1320,46 +1339,109 @@ export const pokemonsMock = [
         },
         {
           name: 'special-defense',
-          points: 54,
+          points: 40,
         },
         {
           name: 'speed',
-          points: 55,
+          points: 90,
         },
       ],
     },
     evolution: [
       {
-        name: 'ekans',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/23.png',
+        name: 'poliwag',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/60.png',
       },
       {
-        name: 'arbok',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/24.png',
+        name: 'poliwhirl',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/61.png',
+      },
+      {
+        name: 'poliwrath',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/62.png',
       },
     ],
   },
   {
-    id: 24,
-    name: 'arbok',
-    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/24.png',
-    color: 'purple',
-    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/24.png',
-    types: [
-      'poison',
-      'nonexistent',
-    ],
+    id: 61,
+    name: 'poliwhirl',
+    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/61.png',
+    color: 'blue',
+    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/61.png',
+    description: 'The swirl on its belly subtly undulates.\nStaring at it may gradually\ncause drowsiness.',
     details: {
-      description: 'Transfixing prey with the face-like\npattern on its belly, it binds\nand poisons the frightened victim.',
+      types: [
+        'water',
+        'nonexistent',
+      ],
       abilities: [
-        'intimidate',
-        'shed-skin',
+        'water-absorb',
+        'damp',
       ],
       generation: 'generation-i',
       stats: [
         {
           name: 'hp',
-          points: 60,
+          points: 65,
+        },
+        {
+          name: 'attack',
+          points: 65,
+        },
+        {
+          name: 'defense',
+          points: 65,
+        },
+        {
+          name: 'special-attack',
+          points: 50,
+        },
+        {
+          name: 'special-defense',
+          points: 50,
+        },
+        {
+          name: 'speed',
+          points: 90,
+        },
+      ],
+    },
+    evolution: [
+      {
+        name: 'poliwag',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/60.png',
+      },
+      {
+        name: 'poliwhirl',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/61.png',
+      },
+      {
+        name: 'poliwrath',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/62.png',
+      },
+    ],
+  },
+  {
+    id: 62,
+    name: 'poliwrath',
+    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/62.png',
+    color: 'blue',
+    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/62.png',
+    description: 'This strong and skilled swimmer is\neven capable of crossing the\nPacific Ocean just by kicking.',
+    details: {
+      types: [
+        'water',
+        'fighting',
+      ],
+      abilities: [
+        'water-absorb',
+        'damp',
+      ],
+      generation: 'generation-i',
+      stats: [
+        {
+          name: 'hp',
+          points: 90,
         },
         {
           name: 'attack',
@@ -1367,227 +1449,294 @@ export const pokemonsMock = [
         },
         {
           name: 'defense',
-          points: 69,
+          points: 95,
         },
         {
           name: 'special-attack',
-          points: 65,
+          points: 70,
         },
         {
           name: 'special-defense',
-          points: 79,
+          points: 90,
         },
         {
           name: 'speed',
-          points: 80,
+          points: 70,
         },
       ],
     },
     evolution: [
       {
-        name: 'ekans',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/23.png',
+        name: 'poliwag',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/60.png',
       },
       {
-        name: 'arbok',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/24.png',
+        name: 'poliwhirl',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/61.png',
+      },
+      {
+        name: 'poliwrath',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/62.png',
       },
     ],
   },
   {
-    id: 25,
-    name: 'pikachu',
-    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png',
-    color: 'yellow',
-    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/25.png',
-    types: [
-      'electric',
-      'nonexistent',
-    ],
+    id: 63,
+    name: 'abra',
+    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/63.png',
+    color: 'brown',
+    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/63.png',
+    description: 'It senses impending attacks and\nteleports away to safety before the\nactual attacks can strike.',
     details: {
-      description: 'This intelligent Pokémon roasts\nhard berries with electricity to\nmake them tender enough to eat.',
+      types: [
+        'psychic',
+        'nonexistent',
+      ],
       abilities: [
-        'static',
-        'lightning-rod',
+        'synchronize',
+        'inner-focus',
       ],
       generation: 'generation-i',
       stats: [
         {
           name: 'hp',
-          points: 35,
+          points: 25,
         },
         {
           name: 'attack',
-          points: 55,
-        },
-        {
-          name: 'defense',
-          points: 40,
-        },
-        {
-          name: 'special-attack',
-          points: 50,
-        },
-        {
-          name: 'special-defense',
-          points: 50,
-        },
-        {
-          name: 'speed',
-          points: 90,
-        },
-      ],
-    },
-    evolution: [
-      {
-        name: 'pichu',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/172.png',
-      },
-      {
-        name: 'pikachu',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png',
-      },
-      {
-        name: 'raichu',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/26.png',
-      },
-    ],
-  },
-  {
-    id: 26,
-    name: 'raichu',
-    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/26.png',
-    color: 'yellow',
-    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/26.png',
-    types: [
-      'electric',
-      'nonexistent',
-    ],
-    details: {
-      description: 'Its tail discharges electricity into\nthe ground, protecting it from\ngetting shocked.',
-      abilities: [
-        'static',
-        'lightning-rod',
-      ],
-      generation: 'generation-i',
-      stats: [
-        {
-          name: 'hp',
-          points: 60,
-        },
-        {
-          name: 'attack',
-          points: 90,
-        },
-        {
-          name: 'defense',
-          points: 55,
-        },
-        {
-          name: 'special-attack',
-          points: 90,
-        },
-        {
-          name: 'special-defense',
-          points: 80,
-        },
-        {
-          name: 'speed',
-          points: 110,
-        },
-      ],
-    },
-    evolution: [
-      {
-        name: 'pichu',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/172.png',
-      },
-      {
-        name: 'pikachu',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png',
-      },
-      {
-        name: 'raichu',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/26.png',
-      },
-    ],
-  },
-  {
-    id: 27,
-    name: 'sandshrew',
-    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/27.png',
-    color: 'yellow',
-    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/27.png',
-    types: [
-      'ground',
-      'nonexistent',
-    ],
-    details: {
-      description: 'If it fell from a great height, this\nPokémon could save itself by rolling\ninto a ball and bouncing.',
-      abilities: [
-        'sand-veil',
-        'sand-rush',
-      ],
-      generation: 'generation-i',
-      stats: [
-        {
-          name: 'hp',
-          points: 50,
-        },
-        {
-          name: 'attack',
-          points: 75,
-        },
-        {
-          name: 'defense',
-          points: 85,
-        },
-        {
-          name: 'special-attack',
           points: 20,
         },
         {
+          name: 'defense',
+          points: 15,
+        },
+        {
+          name: 'special-attack',
+          points: 105,
+        },
+        {
           name: 'special-defense',
-          points: 30,
+          points: 55,
         },
         {
           name: 'speed',
-          points: 40,
+          points: 90,
         },
       ],
     },
     evolution: [
       {
-        name: 'sandshrew',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/27.png',
+        name: 'abra',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/63.png',
       },
       {
-        name: 'sandslash',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/28.png',
+        name: 'kadabra',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/64.png',
+      },
+      {
+        name: 'alakazam',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/65.png',
       },
     ],
   },
   {
-    id: 28,
-    name: 'sandslash',
-    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/28.png',
-    color: 'yellow',
-    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/28.png',
-    types: [
-      'ground',
-      'nonexistent',
-    ],
+    id: 64,
+    name: 'kadabra',
+    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/64.png',
+    color: 'brown',
+    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/64.png',
+    description: 'It stares at its silver spoon to\nfocus its mind. It emits more alpha\nwaves while doing so.',
     details: {
-      description: 'In an attempt to hide itself,\nit will run around at top speed to\nkick up a blinding dust storm.',
+      types: [
+        'psychic',
+        'nonexistent',
+      ],
       abilities: [
-        'sand-veil',
-        'sand-rush',
+        'synchronize',
+        'inner-focus',
       ],
       generation: 'generation-i',
       stats: [
         {
           name: 'hp',
-          points: 75,
+          points: 40,
+        },
+        {
+          name: 'attack',
+          points: 35,
+        },
+        {
+          name: 'defense',
+          points: 30,
+        },
+        {
+          name: 'special-attack',
+          points: 120,
+        },
+        {
+          name: 'special-defense',
+          points: 70,
+        },
+        {
+          name: 'speed',
+          points: 105,
+        },
+      ],
+    },
+    evolution: [
+      {
+        name: 'abra',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/63.png',
+      },
+      {
+        name: 'kadabra',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/64.png',
+      },
+      {
+        name: 'alakazam',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/65.png',
+      },
+    ],
+  },
+  {
+    id: 65,
+    name: 'alakazam',
+    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/65.png',
+    color: 'brown',
+    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/65.png',
+    description: 'Closing both its eyes heightens all\nits other senses. This enables it to\nuse its abilities to their extremes.',
+    details: {
+      types: [
+        'psychic',
+        'nonexistent',
+      ],
+      abilities: [
+        'synchronize',
+        'inner-focus',
+      ],
+      generation: 'generation-i',
+      stats: [
+        {
+          name: 'hp',
+          points: 55,
+        },
+        {
+          name: 'attack',
+          points: 50,
+        },
+        {
+          name: 'defense',
+          points: 45,
+        },
+        {
+          name: 'special-attack',
+          points: 135,
+        },
+        {
+          name: 'special-defense',
+          points: 95,
+        },
+        {
+          name: 'speed',
+          points: 120,
+        },
+      ],
+    },
+    evolution: [
+      {
+        name: 'abra',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/63.png',
+      },
+      {
+        name: 'kadabra',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/64.png',
+      },
+      {
+        name: 'alakazam',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/65.png',
+      },
+    ],
+  },
+  {
+    id: 66,
+    name: 'machop',
+    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/66.png',
+    color: 'gray',
+    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/66.png',
+    description: 'Though small in stature, it is\npowerful enough to easily heft and\nthrow a number of GEODUDE at once.',
+    details: {
+      types: [
+        'fighting',
+        'nonexistent',
+      ],
+      abilities: [
+        'guts',
+        'no-guard',
+      ],
+      generation: 'generation-i',
+      stats: [
+        {
+          name: 'hp',
+          points: 70,
+        },
+        {
+          name: 'attack',
+          points: 80,
+        },
+        {
+          name: 'defense',
+          points: 50,
+        },
+        {
+          name: 'special-attack',
+          points: 35,
+        },
+        {
+          name: 'special-defense',
+          points: 35,
+        },
+        {
+          name: 'speed',
+          points: 35,
+        },
+      ],
+    },
+    evolution: [
+      {
+        name: 'machop',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/66.png',
+      },
+      {
+        name: 'machoke',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/67.png',
+      },
+      {
+        name: 'machamp',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/68.png',
+      },
+    ],
+  },
+  {
+    id: 67,
+    name: 'machoke',
+    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/67.png',
+    color: 'gray',
+    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/67.png',
+    description: 'It always goes at its full power,\nbut this very tough and durable\nPokémon never gets tired.',
+    details: {
+      types: [
+        'fighting',
+        'nonexistent',
+      ],
+      abilities: [
+        'guts',
+        'no-guard',
+      ],
+      generation: 'generation-i',
+      stats: [
+        {
+          name: 'hp',
+          points: 80,
         },
         {
           name: 'attack',
@@ -1595,502 +1744,325 @@ export const pokemonsMock = [
         },
         {
           name: 'defense',
-          points: 110,
-        },
-        {
-          name: 'special-attack',
-          points: 45,
-        },
-        {
-          name: 'special-defense',
-          points: 55,
-        },
-        {
-          name: 'speed',
-          points: 65,
-        },
-      ],
-    },
-    evolution: [
-      {
-        name: 'sandshrew',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/27.png',
-      },
-      {
-        name: 'sandslash',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/28.png',
-      },
-    ],
-  },
-  {
-    id: 29,
-    name: 'nidoran-f',
-    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/29.png',
-    color: 'blue',
-    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/29.png',
-    types: [
-      'poison',
-      'nonexistent',
-    ],
-    details: {
-      description: 'The poison hidden in its small horn\nis extremely potent. Even a tiny\nscratch can have fatal results.',
-      abilities: [
-        'poison-point',
-        'rivalry',
-      ],
-      generation: 'generation-i',
-      stats: [
-        {
-          name: 'hp',
-          points: 55,
-        },
-        {
-          name: 'attack',
-          points: 47,
-        },
-        {
-          name: 'defense',
-          points: 52,
-        },
-        {
-          name: 'special-attack',
-          points: 40,
-        },
-        {
-          name: 'special-defense',
-          points: 40,
-        },
-        {
-          name: 'speed',
-          points: 41,
-        },
-      ],
-    },
-    evolution: [
-      {
-        name: 'nidoran-f',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/29.png',
-      },
-      {
-        name: 'nidorina',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/30.png',
-      },
-      {
-        name: 'nidoqueen',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/31.png',
-      },
-    ],
-  },
-  {
-    id: 30,
-    name: 'nidorina',
-    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/30.png',
-    color: 'blue',
-    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/30.png',
-    types: [
-      'poison',
-      'nonexistent',
-    ],
-    details: {
-      description: 'When feeding its young, it first\nchews the food into a paste, then\nspits it out for the offspring.',
-      abilities: [
-        'poison-point',
-        'rivalry',
-      ],
-      generation: 'generation-i',
-      stats: [
-        {
-          name: 'hp',
           points: 70,
         },
         {
-          name: 'attack',
-          points: 62,
-        },
-        {
-          name: 'defense',
-          points: 67,
-        },
-        {
           name: 'special-attack',
-          points: 55,
-        },
-        {
-          name: 'special-defense',
-          points: 55,
-        },
-        {
-          name: 'speed',
-          points: 56,
-        },
-      ],
-    },
-    evolution: [
-      {
-        name: 'nidoran-f',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/29.png',
-      },
-      {
-        name: 'nidorina',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/30.png',
-      },
-      {
-        name: 'nidoqueen',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/31.png',
-      },
-    ],
-  },
-  {
-    id: 31,
-    name: 'nidoqueen',
-    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/31.png',
-    color: 'blue',
-    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/31.png',
-    types: [
-      'poison',
-      'ground',
-    ],
-    details: {
-      description: 'Its body is covered with needle-like\nscales. It never shows signs\nof shrinking from any attack.',
-      abilities: [
-        'poison-point',
-        'rivalry',
-      ],
-      generation: 'generation-i',
-      stats: [
-        {
-          name: 'hp',
-          points: 90,
-        },
-        {
-          name: 'attack',
-          points: 92,
-        },
-        {
-          name: 'defense',
-          points: 87,
-        },
-        {
-          name: 'special-attack',
-          points: 75,
-        },
-        {
-          name: 'special-defense',
-          points: 85,
-        },
-        {
-          name: 'speed',
-          points: 76,
-        },
-      ],
-    },
-    evolution: [
-      {
-        name: 'nidoran-f',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/29.png',
-      },
-      {
-        name: 'nidorina',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/30.png',
-      },
-      {
-        name: 'nidoqueen',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/31.png',
-      },
-    ],
-  },
-  {
-    id: 32,
-    name: 'nidoran-m',
-    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/32.png',
-    color: 'purple',
-    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/32.png',
-    types: [
-      'poison',
-      'nonexistent',
-    ],
-    details: {
-      description: 'It is small, but its horn is filled\nwith poison. It charges then stabs\nwith the horn to inject poison.',
-      abilities: [
-        'poison-point',
-        'rivalry',
-      ],
-      generation: 'generation-i',
-      stats: [
-        {
-          name: 'hp',
-          points: 46,
-        },
-        {
-          name: 'attack',
-          points: 57,
-        },
-        {
-          name: 'defense',
-          points: 40,
-        },
-        {
-          name: 'special-attack',
-          points: 40,
-        },
-        {
-          name: 'special-defense',
-          points: 40,
-        },
-        {
-          name: 'speed',
           points: 50,
         },
-      ],
-    },
-    evolution: [
-      {
-        name: 'nidoran-m',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/32.png',
-      },
-      {
-        name: 'nidorino',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/33.png',
-      },
-      {
-        name: 'nidoking',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/34.png',
-      },
-    ],
-  },
-  {
-    id: 33,
-    name: 'nidorino',
-    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/33.png',
-    color: 'purple',
-    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/33.png',
-    types: [
-      'poison',
-      'nonexistent',
-    ],
-    details: {
-      description: 'It has a violent disposition and\nstabs foes with its horn, which\noozes poison upon impact.',
-      abilities: [
-        'poison-point',
-        'rivalry',
-      ],
-      generation: 'generation-i',
-      stats: [
-        {
-          name: 'hp',
-          points: 61,
-        },
-        {
-          name: 'attack',
-          points: 72,
-        },
-        {
-          name: 'defense',
-          points: 57,
-        },
-        {
-          name: 'special-attack',
-          points: 55,
-        },
         {
           name: 'special-defense',
-          points: 55,
-        },
-        {
-          name: 'speed',
-          points: 65,
-        },
-      ],
-    },
-    evolution: [
-      {
-        name: 'nidoran-m',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/32.png',
-      },
-      {
-        name: 'nidorino',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/33.png',
-      },
-      {
-        name: 'nidoking',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/34.png',
-      },
-    ],
-  },
-  {
-    id: 34,
-    name: 'nidoking',
-    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/34.png',
-    color: 'purple',
-    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/34.png',
-    types: [
-      'poison',
-      'ground',
-    ],
-    details: {
-      description: 'It swings its big tail around during\nbattle. If its foe flinches, it will\ncharge with its sturdy body.',
-      abilities: [
-        'poison-point',
-        'rivalry',
-      ],
-      generation: 'generation-i',
-      stats: [
-        {
-          name: 'hp',
-          points: 81,
-        },
-        {
-          name: 'attack',
-          points: 102,
-        },
-        {
-          name: 'defense',
-          points: 77,
-        },
-        {
-          name: 'special-attack',
-          points: 85,
-        },
-        {
-          name: 'special-defense',
-          points: 75,
-        },
-        {
-          name: 'speed',
-          points: 85,
-        },
-      ],
-    },
-    evolution: [
-      {
-        name: 'nidoran-m',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/32.png',
-      },
-      {
-        name: 'nidorino',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/33.png',
-      },
-      {
-        name: 'nidoking',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/34.png',
-      },
-    ],
-  },
-  {
-    id: 35,
-    name: 'clefairy',
-    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/35.png',
-    color: 'pink',
-    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/35.png',
-    types: [
-      'fairy',
-      'nonexistent',
-    ],
-    details: {
-      description: 'The moonlight that it stores in the\nwings on its back apparently gives\nit the ability to float in midair.',
-      abilities: [
-        'cute-charm',
-        'magic-guard',
-      ],
-      generation: 'generation-i',
-      stats: [
-        {
-          name: 'hp',
-          points: 70,
-        },
-        {
-          name: 'attack',
-          points: 45,
-        },
-        {
-          name: 'defense',
-          points: 48,
-        },
-        {
-          name: 'special-attack',
           points: 60,
         },
         {
-          name: 'special-defense',
-          points: 65,
-        },
-        {
           name: 'speed',
-          points: 35,
+          points: 45,
         },
       ],
     },
     evolution: [
       {
-        name: 'cleffa',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/173.png',
+        name: 'machop',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/66.png',
       },
       {
-        name: 'clefairy',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/35.png',
+        name: 'machoke',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/67.png',
       },
       {
-        name: 'clefable',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/36.png',
+        name: 'machamp',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/68.png',
       },
     ],
   },
   {
-    id: 36,
-    name: 'clefable',
-    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/36.png',
-    color: 'pink',
-    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/36.png',
-    types: [
-      'fairy',
-      'nonexistent',
-    ],
+    id: 68,
+    name: 'machamp',
+    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/68.png',
+    color: 'gray',
+    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/68.png',
+    description: 'It quickly swings its four arms to\nrock its opponents with ceaseless\npunches and chops from all angles.',
     details: {
-      description: 'With its acute hearing, it can\npick up sounds from far away.\nIt usually hides in quiet places.',
+      types: [
+        'fighting',
+        'nonexistent',
+      ],
       abilities: [
-        'cute-charm',
-        'magic-guard',
+        'guts',
+        'no-guard',
       ],
       generation: 'generation-i',
       stats: [
         {
           name: 'hp',
-          points: 95,
-        },
-        {
-          name: 'attack',
-          points: 70,
-        },
-        {
-          name: 'defense',
-          points: 73,
-        },
-        {
-          name: 'special-attack',
-          points: 95,
-        },
-        {
-          name: 'special-defense',
           points: 90,
         },
         {
+          name: 'attack',
+          points: 130,
+        },
+        {
+          name: 'defense',
+          points: 80,
+        },
+        {
+          name: 'special-attack',
+          points: 65,
+        },
+        {
+          name: 'special-defense',
+          points: 85,
+        },
+        {
           name: 'speed',
-          points: 60,
+          points: 55,
         },
       ],
     },
     evolution: [
       {
-        name: 'cleffa',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/173.png',
+        name: 'machop',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/66.png',
       },
       {
-        name: 'clefairy',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/35.png',
+        name: 'machoke',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/67.png',
       },
       {
-        name: 'clefable',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/36.png',
+        name: 'machamp',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/68.png',
+      },
+    ],
+  },
+  {
+    id: 69,
+    name: 'bellsprout',
+    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/69.png',
+    color: 'green',
+    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/69.png',
+    description: 'Even though its body is extremely\nskinny, it is blindingly fast\nwhen catching its prey.',
+    details: {
+      types: [
+        'grass',
+        'poison',
+      ],
+      abilities: [
+        'chlorophyll',
+        'gluttony',
+      ],
+      generation: 'generation-i',
+      stats: [
+        {
+          name: 'hp',
+          points: 50,
+        },
+        {
+          name: 'attack',
+          points: 75,
+        },
+        {
+          name: 'defense',
+          points: 35,
+        },
+        {
+          name: 'special-attack',
+          points: 70,
+        },
+        {
+          name: 'special-defense',
+          points: 30,
+        },
+        {
+          name: 'speed',
+          points: 40,
+        },
+      ],
+    },
+    evolution: [
+      {
+        name: 'bellsprout',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/69.png',
+      },
+      {
+        name: 'weepinbell',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/70.png',
+      },
+      {
+        name: 'victreebel',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/71.png',
+      },
+    ],
+  },
+  {
+    id: 70,
+    name: 'weepinbell',
+    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/70.png',
+    color: 'green',
+    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/70.png',
+    description: 'Even though it is filled with acid,\nit does not melt because it also\noozes a protective fluid.',
+    details: {
+      types: [
+        'grass',
+        'poison',
+      ],
+      abilities: [
+        'chlorophyll',
+        'gluttony',
+      ],
+      generation: 'generation-i',
+      stats: [
+        {
+          name: 'hp',
+          points: 65,
+        },
+        {
+          name: 'attack',
+          points: 90,
+        },
+        {
+          name: 'defense',
+          points: 50,
+        },
+        {
+          name: 'special-attack',
+          points: 85,
+        },
+        {
+          name: 'special-defense',
+          points: 45,
+        },
+        {
+          name: 'speed',
+          points: 55,
+        },
+      ],
+    },
+    evolution: [
+      {
+        name: 'bellsprout',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/69.png',
+      },
+      {
+        name: 'weepinbell',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/70.png',
+      },
+      {
+        name: 'victreebel',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/71.png',
+      },
+    ],
+  },
+  {
+    id: 71,
+    name: 'victreebel',
+    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/71.png',
+    color: 'green',
+    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/71.png',
+    description: 'It pools in its mouth a fluid with\na honeylike scent, which is really\nan acid that dissolves anything.',
+    details: {
+      types: [
+        'grass',
+        'poison',
+      ],
+      abilities: [
+        'chlorophyll',
+        'gluttony',
+      ],
+      generation: 'generation-i',
+      stats: [
+        {
+          name: 'hp',
+          points: 80,
+        },
+        {
+          name: 'attack',
+          points: 105,
+        },
+        {
+          name: 'defense',
+          points: 65,
+        },
+        {
+          name: 'special-attack',
+          points: 100,
+        },
+        {
+          name: 'special-defense',
+          points: 70,
+        },
+        {
+          name: 'speed',
+          points: 70,
+        },
+      ],
+    },
+    evolution: [
+      {
+        name: 'bellsprout',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/69.png',
+      },
+      {
+        name: 'weepinbell',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/70.png',
+      },
+      {
+        name: 'victreebel',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/71.png',
+      },
+    ],
+  },
+  {
+    id: 72,
+    name: 'tentacool',
+    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/72.png',
+    color: 'blue',
+    shiny: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/72.png',
+    description: 'When the tide goes out, dehydrated\nTENTACOOL remains can be found\nwashed up on the shore.',
+    details: {
+      types: [
+        'water',
+        'poison',
+      ],
+      abilities: [
+        'clear-body',
+        'liquid-ooze',
+      ],
+      generation: 'generation-i',
+      stats: [
+        {
+          name: 'hp',
+          points: 40,
+        },
+        {
+          name: 'attack',
+          points: 40,
+        },
+        {
+          name: 'defense',
+          points: 35,
+        },
+        {
+          name: 'special-attack',
+          points: 50,
+        },
+        {
+          name: 'special-defense',
+          points: 100,
+        },
+        {
+          name: 'speed',
+          points: 70,
+        },
+      ],
+    },
+    evolution: [
+      {
+        name: 'tentacool',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/72.png',
+      },
+      {
+        name: 'tentacruel',
+        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/73.png',
       },
     ],
   },

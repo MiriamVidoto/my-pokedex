@@ -60,11 +60,11 @@ export const getPokemon = async (name) => {
     image: pokemon.sprites.other['official-artwork'].front_default,
     color: species.color.name,
     shiny: pokemon.sprites.other['official-artwork'].front_shiny,
-    types: [
-      pokemon.types[0].type.name,
-      pokemon?.types[1]?.type?.name ?? 'nonexistent'],
+    description: species.flavor_text_entries[14].flavor_text,
     details: {
-      description: species.flavor_text_entries[14].flavor_text,
+      types: [
+        pokemon.types[0].type.name,
+        pokemon?.types[1]?.type?.name ?? 'nonexistent'],
       abilities: [
         pokemon.abilities[0].ability.name,
         pokemon?.abilities[1]?.ability?.name ?? 'nonexistent'],

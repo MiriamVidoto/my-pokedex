@@ -6,7 +6,7 @@ import { StyledTag } from '../styleds/StyledTag';
 export default function EvolutionCard({ evolution }) {
   return (
     <StyledColumnContainer width="400px" margin="16px">
-      <StyledTag borderRadius="4px">EVOLUTIONS</StyledTag>
+      <StyledTag>EVOLUTIONS</StyledTag>
       {
         evolution.map((pokemon) => (
           <PokemonCard

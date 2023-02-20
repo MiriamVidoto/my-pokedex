@@ -9,11 +9,12 @@ export default function DetailsCard({ details }) {
       justifyContent="space-around"
       margin="16px"
     >
-      <StyledTag
-        column="column"
-        height="80px"
-      >
-        <p>{ details.description }</p>
+
+      <StyledTag>
+        {
+          details.types.filter((type) => type !== 'nonexistent')
+            .map((type, i) => <span key={ i }>{type.toUpperCase()}</span>)
+        }
       </StyledTag>
       <StyledTag justifyContent="space-around">
         {
@@ -35,7 +36,6 @@ export default function DetailsCard({ details }) {
 
 DetailsCard.propTypes = {
   details: PropTypes.shape({
-    description: PropTypes.string,
     types: PropTypes.arrayOf(PropTypes.string),
     abilities: PropTypes.arrayOf(PropTypes.string),
     generation: PropTypes.string,
