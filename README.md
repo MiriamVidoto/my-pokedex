@@ -41,20 +41,25 @@ Requisitos funcionais:
 Ao utilizar a aplicação, o usuário é capaz de:
 
   - Na página inicial, visualizar os Cards de cada pokémon;
+
   ![img](pokeHome.gif)
 
   - Realizar a busca de pokémons pelo nome;
+
   ![img](pokeSearch.gif)
 
   - Adicionar ou remover os pokémons escolhidos pelo usuário aos favoritos;
+
   ![img](pokeFavorites.gif)
 
   - Acessar a página de detalhes clicando no card de cada pokémon.
+
   ![img](pokeDetails.gif)
 
 ### Desafios da aplicação:
 
   - Complexidade da Api com muitos endpoints e informações.
+  
   ![img](./pokeNotFound.png)
 
 ###### Projeto desenvolvido por: [Miriam Vidoto](https://github.com/MiriamVidoto)
