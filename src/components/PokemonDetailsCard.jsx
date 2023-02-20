@@ -15,7 +15,7 @@ export default function PokemonDetailsCard({ pokemon }) {
         types={ pokemon.types }
         image={ pokemon.image }
       />
-      <StyledContainer color={ pokemon.color } minHeight="77vh">
+      <StyledContainer color={ pokemon.color } minHeight="75vh" alignContent="flex-start">
         <ImagesCard pokemon={ pokemon } />
         <DetailsCard details={ pokemon.details } />
         <EvolutionCard evolution={ pokemon.evolution } />

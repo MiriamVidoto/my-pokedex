@@ -8,4 +8,5 @@ export const StyledContainer = styled.div`
   align-items: ${(props) => (props.alignItems ? props.alignItems : 'center')};
   background-color: ${(props) => (props.color ? props.color : '#EFEFED')};
   min-height: ${(props) => (props.minHeight ? props.minHeight : '0')};
+  align-content: ${(props) => (props.alignContent ? props.alignContent : 'center')};
 `;

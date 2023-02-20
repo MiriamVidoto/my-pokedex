@@ -9,7 +9,7 @@ export default function Pokedex() {
 
   if (pokemonsList) {
     return (
-      <StyledContainer minHeight="78vh">
+      <StyledContainer minHeight="77vh">
         {
           pokemonsList.map((pokemon) => (
             <PokemonCard

@@ -7,9 +7,9 @@ export default function FavoritesCard() {
     ? getDataFromLocalStorage('favorites')
     : [];
 
-  const minCards = 5;
+  const minCards = 4;
 
-  const size = favoritesPokemons.length < minCards ? '350px' : '150px';
+  const size = favoritesPokemons.length < minCards ? '300px' : '150px';
 
   if (favoritesPokemons) {
     return (

@@ -1,15 +1,9 @@
 import { screen } from '@testing-library/react';
-// import userEvent from '@testing-library/user-event';
+import userEvent from '@testing-library/user-event';
 import NotFound from '../pages/NotFound';
 import renderWithRouter from './helpers/renderWithRouter';
 
 describe('Component test NotFound', () => {
-  it('On the not found page there is a image', () => {
-    renderWithRouter(<NotFound />);
-    const notFoundMessage = screen.getByRole('img', { name: /not found/i });
-
-    expect(notFoundMessage).toBeInTheDocument();
-  });
   it('on the NotFound page there is a image in the header', () => {
     renderWithRouter(<NotFound />);
 
@@ -26,5 +20,11 @@ describe('Component test NotFound', () => {
     userEvent.click(homeLink);
 
     expect(history.location.pathname).toBe('/');
+  });
+  it('On the not found page there is a image', () => {
+    renderWithRouter(<NotFound />);
+    const notFoundMessage = screen.getByRole('img', { name: /not found/i });
+
+    expect(notFoundMessage).toBeInTheDocument();
   });
 });

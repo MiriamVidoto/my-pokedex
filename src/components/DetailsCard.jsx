@@ -6,8 +6,8 @@ export default function DetailsCard({ details }) {
   return (
     <StyledColumnContainer
       width="400px"
-      height="400px"
       justifyContent="space-around"
+      margin="16px"
     >
       <StyledTag
         column="column"
