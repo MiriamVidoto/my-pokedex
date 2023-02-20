@@ -7,7 +7,7 @@ export const StyledColumnContainer = styled.div`
   align-items: ${(props) => (props.alignItems ? props.alignItems : 'center')};
   background-color: ${(props) => (props.color ? props.color : 'transparent')};
   min-height: ${(props) => (props.minHeight ? props.minHeight : '0')};
-  height: ${(props) => (props.height ? props.height : '')};
+  height: ${(props) => (props.height ? props.height : '100%')};
   width: ${(props) => (props.width ? props.width : '')};
 
   span{

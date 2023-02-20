@@ -9,7 +9,7 @@ export default function AboutCard() {
   return (
     <StyledColumnContainer>
       <StyledContainer minHeight="86vh">
-        <StyledImg alt="not found" src={ pokedex } height="50vh" />
+        <StyledImg alt="pokedex" src={ pokedex } height="50vh" maxWidth="70" />
         <StyledTag
           borderRadius="5px"
           height="40vh"

@@ -9,14 +9,14 @@ export const StyledTag = styled.div`
   margin: ${(props) => (props.margin ? props.margin : '2px')};
   min-height: ${(props) => (props.height ? props.height : '40px')};
   width: ${(props) => (props.width ? props.width : '280px')};
-  display: flex;
   padding: ${(props) => (props.padding ? props.padding : '4px')};
   box-shadow: ${(props) => (props.shadow ? props.shadow : '1px 1px 2px #00000041')};
-  color: #28292A;
   text-align: ${(props) => (props.textAlign ? props.textAlign : 'center')};
+  display: flex;
+  color: #28292A;
   
   span{
-    flex-basis: 50%;
+    flex-basis: 50%;  
   }
 
   p{

@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <StyledHeader>
       <Link to="/">
-        <img src={ pokedex } alt="pokedex" />
+        <img src={ pokedex } alt="my-pokedex" />
       </Link>
     </StyledHeader>
   );

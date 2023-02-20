@@ -12,7 +12,7 @@ export const StyledCard = styled.div`
   width: ${(props) => (props.width ? props.width : '150px')};
 
   img { 
-    height: ${(props) => (props.heightImg ? props.heightImg : '80%')};
+    height: ${(props) => (props.heightImg ? props.heightImg : '85%')};
   }
 
   a{
@@ -21,8 +21,4 @@ export const StyledCard = styled.div`
     color: #28292A ;
   }
 
-  h4{
-    margin: 0;
-    font-size: 0.8em;
-  }
 `;

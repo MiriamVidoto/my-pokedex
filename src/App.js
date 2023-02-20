@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import PokedexProvider from './context/PokedexProvider';
 import About from './pages/About';
 import FavoritePokemons from './pages/FavoritesPokemons';
@@ -12,13 +12,13 @@ export default function App() {
 
     <PokedexProvider>
       <StyledGlobal />
-      <Routes>
-        <Route path="/" element={ <Home /> } />
-        <Route path="/details/:name" element={ <PokemonDetails /> } />
-        <Route path="/favorites" element={ <FavoritePokemons /> } />
-        <Route path="/about" element={ <About /> } />
-        <Route path="*" element={ <NotFound /> } />
-      </Routes>
+      <Switch>
+        <Route exact path="/" component={ Home } />
+        <Route exact path="/details/:name" component={ PokemonDetails } />
+        <Route exact path="/favorites" component={ FavoritePokemons } />
+        <Route exact path="/about" component={ About } />
+        <Route component={ NotFound } />
+      </Switch>
     </PokedexProvider>
 
   );

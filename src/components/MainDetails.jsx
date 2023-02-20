@@ -39,19 +39,19 @@ export default function MainDetails({ id, name, color, types, image }) {
 
   return (
     <StyledSidebar height="80px" color={ color } justifyContent="space-around">
-      <StyledColumnContainer>
+      <StyledColumnContainer justifyContent="space-around" width="30%">
         {
           types.filter((type) => type !== 'nonexistent')
             .map((type, i) => <span key={ i }>{type.toUpperCase()}</span>)
         }
       </StyledColumnContainer>
-      <StyledTitle>
+      <StyledTitle width="35%">
         {`#${id} ${(name).toUpperCase()}`}
       </StyledTitle>
       <StyledButton
         color={ color }
         shadow=" "
-        width="80px"
+        width="30%"
         onClick={ handleClick }
       >
         {

@@ -7,7 +7,7 @@ export default function Loading() {
   return (
     <StyledColumnContainer>
       <StyledContainer minHeight="89vh" color="white">
-        <StyledImg alt="not found" src={ loading } height="78vh" />
+        <StyledImg alt="loading" src={ loading } height="78vh" />
       </StyledContainer>
     </StyledColumnContainer>
   );
