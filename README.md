@@ -3,6 +3,8 @@
 Projeto para o desafio técnico, onde foi desenvolvido uma Pokédex (ferramenta para buscar e exibir informações de pokémons).
 Foi um projeto muito divertido de desenvolver, no qual pretendo continuar trabalhando para aprimorar seu design e suas funcionalidades.
 
+- https://miriamvidoto.github.io/my-pokedex/
+
 ![img](./pokeAbout.png)
 
 ## Desafio
@@ -24,7 +26,7 @@ Requisitos funcionais:
 
 3. Inicie o app para visualização da página e acesse através da porta 3000:
   ``npm start``
-  - http://localhost:3000/ 
+  
 
 ## Desenvolvimento:
 - Projeto de Front-end de uma aplicação para pesquisa e exibição das informações de pokémons. 
