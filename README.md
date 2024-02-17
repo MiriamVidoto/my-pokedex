@@ -1,6 +1,6 @@
 # My Pokedex
 
-Projeto para o desafio técnico, onde foi desenvolvido uma Pokédex (ferramenta para buscar e exibir informações de pokémons).
+Projeto onde foi desenvolvido uma Pokédex (ferramenta para buscar e exibir informações de pokémons).
 Foi um projeto muito divertido de desenvolver, no qual pretendo continuar trabalhando para aprimorar seu design e suas funcionalidades.
 
 - https://miriamvidoto.github.io/my-pokedex/
